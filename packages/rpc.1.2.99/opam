@@ -10,4 +10,6 @@ remove: [
 depends: [
   "ocamlfind"
   "xmlm"
+  "lwt"
+  "js_of_ocaml"
 ]
