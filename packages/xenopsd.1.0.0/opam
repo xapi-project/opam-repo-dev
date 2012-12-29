@@ -2,10 +2,10 @@ opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
   ["make"]
-  ["make" "install"]
+  ["make" "install" "BINDIR=%{bin}%" "SBINDIR=%{bin}%"]
 ]
 remove: [
-  ["ocamlfind" "remove" "xenops"]
+  ["make" "uninstall" "BINDIR=%{bin}%" "SBINDIR=%{bin}%"]
 ]
 depends: [
   "ocamlfind"
