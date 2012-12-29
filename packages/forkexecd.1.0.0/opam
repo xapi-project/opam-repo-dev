@@ -2,10 +2,10 @@ opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
   ["make"]
-  ["make" "install" "BINDIR=%{bin}%" "SBINDIR=%{prefix}%/usr/sbin"]
+  ["make" "install" "BINDIR=%{bin}%" "SBINDIR=%{bin}%"]
 ]
 remove: [
-  ["make" "uninstall" "BINDIR=%{bin}%" "SBINDIR=%{prefix}%/usr/sbin"]
+  ["make" "uninstall" "BINDIR=%{bin}%" "SBINDIR=%{bin}%"]
 ]
 depends: [
   "ocamlfind"
