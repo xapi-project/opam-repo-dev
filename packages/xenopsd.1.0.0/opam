@@ -20,4 +20,5 @@ depends: [
   "xcp"
   "forkexecd"
   "fd-send-recv"
+  "sexplib"
 ]
