@@ -16,5 +16,8 @@ depends: [
   "cohttp"
   "uri"
   "re"
-  "rpc"
+  "rpclib"
+  "xcp"
+  "forkexec"
+  "fd-send-recv"
 ]
