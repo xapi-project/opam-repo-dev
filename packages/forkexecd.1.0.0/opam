@@ -12,4 +12,5 @@ depends: [
   "syslog"
   "rpc"
   "fd-send-recv"
+  "uuidm"
 ]
