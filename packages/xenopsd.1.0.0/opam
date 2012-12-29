@@ -22,4 +22,5 @@ depends: [
   "fd-send-recv"
   "sexplib"
   "xenstore"
+  "xenstore_transport"
 ]
