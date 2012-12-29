@@ -1,0 +1,3 @@
+Low-level memory mapping functions
+
+This is probably unnecessary with modern OCaml versions (>3.12.1)
