@@ -10,6 +10,6 @@ remove: [
 depends: [
   "ocamlfind"
   "syslog"
-  "rpclib"
+  "rpc"
   "fd-send-recv"
 ]
