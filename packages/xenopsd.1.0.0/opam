@@ -21,4 +21,5 @@ depends: [
   "forkexecd"
   "fd-send-recv"
   "sexplib"
+  "xenstore"
 ]
