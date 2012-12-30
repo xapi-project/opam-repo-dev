@@ -1,12 +1,10 @@
 opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
-  ["make" "-C" "tools/ocaml/libs/mmap" "all" ]
-  ["make" "-C" "tools/ocaml/libs/uuid" "all" ]
-  ["make" "-C" "tools/ocaml/libs/xc" "all" ]
-  ["make" "-C" "tools/ocaml/libs/xc" "install" ]
+  ["make"]
+  ["make" "install"]
 ]
 remove: [
-  ["ocamlfind" "remove" "xenctrl"]
+  ["make" "uninstall"]
 ]
 depends: ["ocamlfind"]
