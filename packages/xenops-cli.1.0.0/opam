@@ -10,6 +10,7 @@ remove: [
 depends: [
   "ocamlfind"
   "uuidm"
+  "cmdliner"
   "rpc"
   "xcp"
 ]
