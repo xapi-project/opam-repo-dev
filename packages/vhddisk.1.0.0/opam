@@ -10,7 +10,7 @@ remove: [
 depends: [
   "ocamlfind"
   "xen-block-driver"
-  "xenctrl"
+  "xenctrl" {>="5.0.0"}
   "xenstore"
   "xenstore_transport"
   "vhd"
