@@ -7,4 +7,4 @@ build: [
 remove: [
   ["ocamlfind" "remove" "shared-memory-ring"]
 ]
-depends: ["cstruct" "lwt" "ocamlfind"]
+depends: ["cstruct" "lwt" "ocamlfind" "ounit"]
