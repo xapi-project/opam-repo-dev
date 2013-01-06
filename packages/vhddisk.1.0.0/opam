@@ -12,5 +12,6 @@ depends: [
   "xen-block-driver"
   "xenctrl"
   "xenstore"
+  "xenstore_transport"
   "vhd"
 ]
