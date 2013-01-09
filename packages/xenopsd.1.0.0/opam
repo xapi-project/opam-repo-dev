@@ -23,5 +23,5 @@ depends: [
   "sexplib"
   "xenstore"
   "xenstore_transport"
-  "xenctrl" {= "4.1.0"}
+  "xenctrl" {= "5.0.0"}
 ]
