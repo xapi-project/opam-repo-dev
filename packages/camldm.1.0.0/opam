@@ -9,5 +9,5 @@ remove: [
 ]
 depends: [
   "ocamlfind"
-  "rpclib"
+  "rpc"
 ] 

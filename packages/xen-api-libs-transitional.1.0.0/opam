@@ -12,5 +12,5 @@ depends: [
   "stdext"
   "xmlm"
   "forkexecd"
-  "rpclib"
+  "rpc"
 ] 
