@@ -9,6 +9,5 @@ remove: [
 ]
 depends: [
   "ocamlfind"
-  "forkexecd"
   "uuidm"
 ] 
