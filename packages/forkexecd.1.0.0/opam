@@ -13,4 +13,5 @@ depends: [
   "rpc"
   "fd-send-recv"
   "uuidm"
+  "stdext"
 ]
