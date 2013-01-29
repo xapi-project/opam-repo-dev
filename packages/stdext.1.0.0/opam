@@ -10,4 +10,5 @@ remove: [
 depends: [
   "ocamlfind"
   "uuidm"
+  "fd-send-recv"
 ] 
