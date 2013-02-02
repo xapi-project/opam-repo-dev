@@ -1,0 +1,17 @@
+opam-version: "1"
+maintainer: "dave.scott@eu.citrix.com"
+build: [
+  ["obuild" "configure"]
+  ["obuild" "build"]
+  ["ocamlfind" "install" "qmp" "META" "dist/build/lib-qmp/*" ]
+]
+remove: [
+  ["ocamlfind" "uninstall" "qmp"]
+]
+depends: [
+  "ocamlfind"
+  "obuild"
+  "yojson"
+  "ounit"
+  "cmdliner"
+]
