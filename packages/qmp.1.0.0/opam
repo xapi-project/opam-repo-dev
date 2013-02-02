@@ -3,7 +3,7 @@ maintainer: "dave.scott@eu.citrix.com"
 build: [
   ["obuild" "configure"]
   ["obuild" "build"]
-  ["ocamlfind" "install" "qmp" "META" "dist/build/lib-qmp/*" ]
+  ["./install.sh"]
 ]
 remove: [
   ["ocamlfind" "uninstall" "qmp"]
