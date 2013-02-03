@@ -1,0 +1,15 @@
+opam-version: "1"
+maintainer: "dave.scott@eu.citrix.com"
+build: [
+  ["obuild" "configure"]
+  ["obuild" "build"]
+  ["BINDIR=%{bin}%" "./install.sh"]
+]
+remove: [
+  ["BINDIR=%{bin}%" "./uninstall.sh"]
+]
+depends: [
+  "xcp"
+  "stdext"
+  "xen-api-libs-transitional"
+]
