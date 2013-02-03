@@ -3,10 +3,10 @@ maintainer: "dave.scott@eu.citrix.com"
 build: [
   ["obuild" "configure"]
   ["obuild" "build"]
-  ["BINDIR=%{bin}%" "./install.sh"]
+  ["make" "install" "BINDIR=%{bin}%"]
 ]
 remove: [
-  ["BINDIR=%{bin}%" "./uninstall.sh"]
+  ["make" "uninstall" "BINDIR=%{bin}%"]
 ]
 depends: [
   "xcp"
