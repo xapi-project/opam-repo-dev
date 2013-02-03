@@ -10,6 +10,7 @@ remove: [
 ]
 depends: [
   "xcp"
-  "stdext"
-  "xen-api-libs-transitional"
+  "re"
+  "rpclib"
+  "ocamlfind"
 ]
