@@ -16,4 +16,5 @@ depends: [
   "cmdliner"
   "cohttp"
   "syslog"
+  "obuild"
 ]
