@@ -11,6 +11,6 @@ remove: [
 depends: [
   "xcp"
   "re"
-  "rpclib"
+  "rpc"
   "ocamlfind"
 ]
