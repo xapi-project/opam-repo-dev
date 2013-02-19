@@ -26,4 +26,5 @@ depends: [
   "xenstore_transport"
   "xenctrl" {= "5.0.0"}
   "qmp"
+  "oclock"
 ]
