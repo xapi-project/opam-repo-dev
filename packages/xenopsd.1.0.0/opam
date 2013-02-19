@@ -8,6 +8,7 @@ remove: [
   ["make" "uninstall" "BINDIR=%{bin}%" "SBINDIR=%{bin}%" "LIBEXECDIR=%{bin}%" "SCRIPTSDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
 ]
 depends: [
+  "obuild"
   "ocamlfind"
   "xmlm"
   "syslog"
