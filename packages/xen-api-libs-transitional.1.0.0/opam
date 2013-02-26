@@ -13,4 +13,7 @@ depends: [
   "xmlm"
   "forkexecd"
   "rpc"
+  "xenctrl"
+  "xenstore"
+  "xenstore_transport"
 ] 
