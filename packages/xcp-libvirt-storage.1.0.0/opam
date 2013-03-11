@@ -1,5 +1,5 @@
 opam-version: "1"
-maintainer: "jonathan.ludlam@eu.citrix.com"
+maintainer: "dave.scott@eu.citrix.com"
 build: [
   ["make"]
   ["make" "install" "BINDIR=%{bin}%"]
@@ -8,12 +8,13 @@ remove: [
   ["make" "uninstall" "BINDIR=%{bin}%"]
 ]
 depends: [
-  "ocamlfind"
-  "stdext"
-  "xmlm"
-  "forkexecd"
+  "libvirt"
+  "xcp"
+  "re"
   "rpc"
-  "xenctrl"
-  "xenstore"
-  "xenstore_transport"
-] 
+  "cmdliner"
+  "cohttp"
+  "syslog"
+  "obuild"
+  "ocamlfind"
+]
