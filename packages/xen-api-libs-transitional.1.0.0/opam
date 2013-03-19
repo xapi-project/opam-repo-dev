@@ -5,7 +5,19 @@ build: [
   ["make" "install" "BINDIR=%{bin}%"]
 ]
 remove: [
-  ["make" "uninstall" "BINDIR=%{bin}%"]
+  ["ocamlfind" "remove" "cpuid"]
+  ["ocamlfind" "remove" "gzip"]
+  ["ocamlfind" "remove" "http-svr"]
+  ["ocamlfind" "remove" "log"]
+  ["ocamlfind" "remove" "pciutil"]
+  ["ocamlfind" "remove" "sexpr"]
+  ["ocamlfind" "remove" "sha1"]
+  ["ocamlfind" "remove" "stunnel"]
+  ["ocamlfind" "remove" "uuid"]
+  ["ocamlfind" "remove" "xenctrlext"]
+  ["ocamlfind" "remove" "xenstore-compat"]
+  ["ocamlfind" "remove" "xen-utils"]
+  ["ocamlfind" "remove" "xml-light2"]
 ]
 depends: [
   "ocamlfind"
@@ -16,4 +28,4 @@ depends: [
   "xenctrl"
   "xenstore"
   "xenstore_transport"
-] 
+]
