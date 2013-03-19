@@ -7,4 +7,4 @@ build: [
 remove: [
   ["make" "PREFIX=%{prefix}%" "uninstall"]
 ]
-depends: ["obuild" "github" {>= "0.4.4"} "cohttp" "lwt"]
+depends: ["obuild" "github-prdup" "cohttp" "lwt"]
