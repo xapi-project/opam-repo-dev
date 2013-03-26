@@ -1,0 +1,10 @@
+opam-version: "1"
+maintainer: "jerome.maloberti@citrix.com"
+build: [
+  ["make"]
+  ["make" "PREFIX=%{prefix}%" "install"]
+]
+remove: [
+  ["make" "PREFIX=%{prefix}%" "uninstall"]
+]
+depends: ["obuild"]
