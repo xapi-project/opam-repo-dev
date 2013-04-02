@@ -8,5 +8,5 @@ remove: [
   ["make" "uninstall"]
 ]
 depends: [
-  "ocamlfind"
+  "ocamlfind" "stdext"
 ] 

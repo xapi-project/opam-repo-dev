@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "jonathan.ludlam@eu.citrix.com"
+build: [
+  ["make"]
+  ["make" "install" "DESTDIR=%{prefix}%"]
+]
+remove: [
+]
+depends: [
+  "ocamlfind" "xcp" "xen-api-libs-transitional" "xen-api-client" "omake" "netdev" "cdrom" "fd-send-recv" "forkexecd" "libvhd" "nbd" "netdev" "oclock" "ounit" "rpc" "ssl" "stdext" "syslog" "tapctl" "xenctrl" "xenstore"
+] 
