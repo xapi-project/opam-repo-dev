@@ -7,4 +7,4 @@ build: [
 remove: [
   ["make" "PREFIX=%{prefix}%" "uninstall"]
 ]
-depends: ["obuild" "camltemplate" "cohttp" "xen-api-client" "cmdliner"]
+depends: ["obuild" "camltemplate" "cohttp" "xen-api-client" "cmdliner" "ocamlify"]
