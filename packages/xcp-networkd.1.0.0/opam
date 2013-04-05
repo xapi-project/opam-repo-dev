@@ -8,5 +8,5 @@ remove: [
   ["make" "uninstall" "BINDIR=%{bin}%" "SBINDIR=%{bin}%" "LIBEXECDIR=%{bin}%" "SCRIPTSDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
 ]
 depends: [
-  "ocamlfind" "xcp" "xen-api-libs-transitional" "xen-api-client"
+  "ocamlfind" "xcp" "xen-api-libs-transitional" "xen-api-client" "xcp-inventory"
 ] 
