@@ -7,5 +7,5 @@ build: [
 remove: [
   ["ocamlfind" "remove" "xcp"]
 ]
-depends: [ "uri" "re" "cohttp" "xmlm" "rpc" "ocamlfind" ]
+depends: [ "uri" "re" "cohttp" "xmlm" "rpc" {> "1.4.0"} "ocamlfind" ]
 
