@@ -2,7 +2,7 @@ opam-version: "1"
 maintainer: "jonathan.ludlam@eu.citrix.com"
 build: [
   ["make"]
-  ["make" "install" "DESTDIR=%{prefix}%"]
+  ["make" "install" "VARPATCHDIR=%{prefix}%/var/patch" "OPTDIR=%{lib}%/xcp" "PLUGINDIR=%{lib}%/xcp/plugins" "HOOKSDIR=%{prefix}%/etc/hook-scripts" "INVENTORY=/etc/xcp/inventory" "XAPICONF=%{prefix}%/etc/xapi.conf" "LIBEXECDIR=%{lib}%/xcp/bin" "SCRIPTSDIR=%{lib}%/xcp/scripts" "SHAREDIR=%{share}%/xcp" "WEBDIR=%{share}%/xcp/web" "XHADIR=%{bin}%/xha" "BINDIR=%{bin}%" "SBINDIR=%{bin}%" ]
 ]
 remove: [
 ]
