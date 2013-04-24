@@ -1,0 +1,10 @@
+opam-version: "1"
+maintainer: "jonathan.ludlam@eu.citrix.com"
+build: [
+  ["make"]
+  ["make" "BINDIR=%{bin}%" "install"]
+]
+remove: [
+  ["make" "BINDIR=%{bin}%" "uninstall"]
+]
+depends: ["obuild" "stdext" "rpc" "xen-api-libs-transitional" ]
