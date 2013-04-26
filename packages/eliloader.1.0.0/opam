@@ -1,0 +1,9 @@
+opam-version: "1"
+maintainer: "jonathan.ludlam@eu.citrix.com"
+build: [
+  ["cp" "eliloader" "%{bin}%/eliloader"]
+]
+remove: [
+  ["rm" "%{bin}%/eliloader"]
+]
+depends: []
