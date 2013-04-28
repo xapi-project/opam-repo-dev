@@ -12,6 +12,8 @@ depends: [
   "lwt"
   "cstruct"
   "shared-memory-ring"
-  "xenctrl"
   "mirage"
+]
+depopts: [
+  "xenctrl"
 ]
