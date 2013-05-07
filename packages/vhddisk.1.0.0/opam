@@ -15,4 +15,5 @@ depends: [
   "xenstore"
   "xenstore_transport"
   "vhd"
+  "cmdliner"
 ]
