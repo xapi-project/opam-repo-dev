@@ -9,9 +9,11 @@ remove: [
 ]
 depends: [
   "ocamlfind"
+  "obuild"
   "xen-block-driver"
   "xenctrl" {>="5.0.0"}
   "xenstore"
   "xenstore_transport"
   "vhd"
+  "cmdliner"
 ]
