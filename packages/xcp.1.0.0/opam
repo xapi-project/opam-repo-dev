@@ -14,5 +14,6 @@ depends: [ "uri"
            "rpc" {> "1.4.0"}
            "ocamlfind"
            "syslog"
+           "message_switch"
           ]
 
