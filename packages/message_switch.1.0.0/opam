@@ -9,7 +9,7 @@ remove: [
 ]
 depends: [
   "ocamlfind"
-  "cohttp" {>= "0.9.7"}
+  "cohttp" {= "0.9.7"}
   "rpc"
   "xenstore"
   "ounit"
