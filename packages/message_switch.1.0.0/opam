@@ -18,4 +18,5 @@ depends: [
   "re"
   "rpc"
   "cmdliner"
+  "ssl"
 ]
