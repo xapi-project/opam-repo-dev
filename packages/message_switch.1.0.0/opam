@@ -17,4 +17,5 @@ depends: [
   "uri"
   "re"
   "rpc"
+  "cmdliner"
 ]
