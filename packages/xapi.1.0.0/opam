@@ -1,8 +1,23 @@
 opam-version: "1"
 maintainer: "jonathan.ludlam@eu.citrix.com"
 build: [
+  ["./configure"
+  "--varpatchdir" "%{prefix}%/var/patch"
+  "--optdir" "%{lib}%/xcp"
+  "--plugindir" "%{lib}%/xcp/plugins"
+  "--hooksdir" "%{prefix}%/etc/hook-scripts"
+  "--xapiconf" "%{prefix}%/etc/xapi.conf" 
+  "--libexecdir" "%{lib}%/xcp/bin"
+  "--scriptsdir" "%{lib}%/xcp/scripts" 
+  "--sharedir" "%{share}%/xcp"
+  "--webdir" "%{share}%/xcp/web"
+  "--xhadir" "%{bin}%/xha" 
+  "--bindir" "%{bin}%" 
+  "--sbindir" "%{bin}%"
+  "--etcdir" "%{prefix}%/etc" 
+  "--vardir" "/var/lib/xcp" ]
   ["make"]
-  ["make" "install" "VARPATCHDIR=%{prefix}%/var/patch" "OPTDIR=%{lib}%/xcp" "PLUGINDIR=%{lib}%/xcp/plugins" "HOOKSDIR=%{prefix}%/etc/hook-scripts" "INVENTORY=/etc/xcp/inventory" "XAPICONF=%{prefix}%/etc/xapi.conf" "LIBEXECDIR=%{lib}%/xcp/bin" "SCRIPTSDIR=%{lib}%/xcp/scripts" "SHAREDIR=%{share}%/xcp" "WEBDIR=%{share}%/xcp/web" "XHADIR=%{bin}%/xha" "BINDIR=%{bin}%" "SBINDIR=%{bin}%" "ETCDIR=%{prefix}%/etc" "VARDIR=/var/lib/xcp" ]
+  ["make" "install"]
 ]
 remove: [
 ]
