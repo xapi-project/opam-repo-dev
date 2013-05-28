@@ -20,4 +20,5 @@ depends: [
   "rpc"
   "cmdliner"
   "ssl"
+  "oclock"
 ]
