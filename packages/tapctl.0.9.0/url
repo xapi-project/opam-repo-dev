@@ -1,1 +1,2 @@
-git: "git://github.com/xen-org/tapctl.git"
+archive: "https://github.com/xen-org/tapctl/archive/tapctl-0.9.0.tar.gz"
+checksum: "8e0c191cce0ebea946daaf7cff9c05bc"
