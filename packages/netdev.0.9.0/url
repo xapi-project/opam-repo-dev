@@ -1,1 +1,2 @@
-git: "git://github.com/xen-org/netdev.git"
+git: "https://github.com/xen-org/netdev/archive/netdev-0.9.0.tar.gz"
+archive: "719dd139fdca9c2617d5b0df97e60dda"
