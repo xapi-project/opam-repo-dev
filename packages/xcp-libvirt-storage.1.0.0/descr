@@ -1,3 +1,0 @@
-An XCP to libvirt storage adapter
-
-This daemon allows an XCP host to interact with storage via libvirt.
