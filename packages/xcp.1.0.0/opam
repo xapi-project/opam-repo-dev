@@ -15,5 +15,6 @@ depends: [ "uri"
            "ocamlfind"
            "syslog"
            "message_switch"
+	   "xcp-rrd"
           ]
 
