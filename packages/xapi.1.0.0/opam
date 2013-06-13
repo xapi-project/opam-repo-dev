@@ -16,11 +16,16 @@ build: [
   "--sbindir" "%{bin}%"
   "--etcdir" "%{prefix}%/etc" 
   "--vardir" "/var/lib/xcp" ]
-  ["make"]
-  ["make" "install"]
+  [make "version"]
+  ["omake" "phase1"]
+  ["omake" "phase2"]
+  ["omake" "ocaml/xapi/xapi"]
+  ["install" "-m" "0755" "ocaml/xapi/xapi.opt" "%{bin}%/xapi"]
 ]
 remove: [
+  ["rm" "%{bin}%/xapi"]
 ]
 depends: [
   "ocamlfind" "xcp" "xen-api-libs-transitional" "xen-api-client" "omake" "netdev" "cdrom" "fd-send-recv" "forkexecd" "libvhd" "nbd" "netdev" "oclock" "ounit" "rpc" "ssl" "stdext" "syslog" "tapctl" "xenctrl" "xenstore"
+  "xcp-inventory"
 ] 
