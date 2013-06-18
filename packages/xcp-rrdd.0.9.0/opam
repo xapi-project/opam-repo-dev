@@ -17,4 +17,5 @@ depends: [
   "forkexecd"
   "xenctrl"
   "xenstore_transport"
+  "xenops"
 ]
