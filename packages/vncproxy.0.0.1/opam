@@ -1,0 +1,10 @@
+opam-version: "1"
+maintainer: "dave.scott@eu.citrix.com"
+build: [
+  ["make"]
+  ["make" "BINDIR=%{bin}%" "install"]
+]
+remove: [
+  ["make" "BINDIR=%{bin}%" "uninstall"]
+]
+depends: ["obuild" "xen-api-client" "cmdliner"]
