@@ -10,6 +10,7 @@ remove: [
 depends: [
   "ocamlfind"
   "obuild"
+  "mirage-unix"
   "xen-block-driver"
   "xenctrl" {>="5.0.0"}
   "xenstore"
