@@ -9,6 +9,7 @@ remove: [
 ]
 depends: [
   "ocamlfind"
+  "cmdliner"
   "lwt"
   "cstruct"
   "shared-memory-ring"
