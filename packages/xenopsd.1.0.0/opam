@@ -1,9 +1,10 @@
 opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
+  [make "configure"]
   ["./configure" "--bindir" "%{bin}%" "--sbindir" "%{bin}%" "--libexecdir" "%{bin}%" "--scriptsdir" "%{bin}%" "--etcdir" "%{prefix}%/etc"]
-  ["make"]
-  ["make" "install"]
+  [make]
+  [make "install"]
 ]
 remove: [
   ["make" "uninstall"]
