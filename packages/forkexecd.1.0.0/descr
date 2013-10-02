@@ -1,0 +1,1 @@
+Functions to execute processes, pass file descriptors around and return results via a single-threaded shared service.

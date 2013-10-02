@@ -26,6 +26,6 @@ remove: [
   ["rm" "%{bin}%/xapi"]
 ]
 depends: [
-  "ocamlfind" "xcp" "xen-api-libs-transitional" "xen-api-client" "omake" "netdev" "cdrom" "fd-send-recv" "forkexecd" "libvhd" "nbd" "netdev" "oclock" "ounit" "rpc" "ssl" "stdext" "syslog" "tapctl" "xenctrl" "xenstore"
+  "ocamlfind" "xcp" "xen-api-libs-transitional" "xen-api-client" "omake" "netdev" "cdrom" "fd-send-recv" "forkexecd" "libvhd" "nbd" "netdev" "oclock" "ounit" "rpc" "ssl" "stdext" "tapctl" "xenctrl" "xenstore"
   "xcp-inventory"
 ] 

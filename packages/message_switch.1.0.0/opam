@@ -15,7 +15,6 @@ depends: [
   "rpc"
   "xenstore"
   "ounit"
-  "syslog"
   "uri"
   "re"
   "rpc"

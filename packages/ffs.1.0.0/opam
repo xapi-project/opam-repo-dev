@@ -15,6 +15,5 @@ depends: [
   "ocamlfind"
   "cmdliner"
   "cohttp"
-  "syslog"
   "obuild"
 ]

@@ -1,0 +1,24 @@
+opam-version: "1"
+maintainer: "dave.scott@eu.citrix.com"
+build: [
+  [ "./configure" "--bindir=%{bin}%" "--libexecdir=%{bin}%" "--etcdir=%{bin}%/../etc"]
+  [make]
+  [make "install" "BINDIR=%{bin}%"]
+]
+remove: [
+  [make "uninstall" "BINDIR=%{bin}%"]
+]
+depends: [
+  "ocamlfind"
+  "lwt"
+  "vhd-format"
+  "nbd" {>= "0.9.1"}
+  "tapctl"
+  "xcp"
+  "cmdliner"
+  "uuidm"
+  "cohttp"
+  "xenstore"
+  "xenstore_transport"
+  "uri"
+]

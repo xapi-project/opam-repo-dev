@@ -12,7 +12,6 @@ depends: [
   "obuild"
   "stdext"
   "ocamlfind"
-  "syslog"
   "uuidm"
   "cohttp"
   "uri"

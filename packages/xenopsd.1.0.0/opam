@@ -13,7 +13,6 @@ depends: [
   "obuild"
   "ocamlfind"
   "xmlm"
-  "syslog"
   "uuidm"
   "ounit"
   "cohttp"
