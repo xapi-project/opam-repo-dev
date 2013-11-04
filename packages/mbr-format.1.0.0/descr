@@ -1,0 +1,7 @@
+Read and write Master Boot Records
+
+This pure OCaml library allows the Master Boot Records to be read
+and written. The intended purpose is to programmatically create
+disk images containing old-style partition tables, which then
+contain filesystems which then contain
+[mirage](http://www.openmirage.org/) kernels.
