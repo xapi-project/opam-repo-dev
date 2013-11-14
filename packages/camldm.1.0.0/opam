@@ -9,5 +9,5 @@ remove: [
 ]
 depends: [
   "ocamlfind"
-  "rpc"
+  "rpc" {>= "1.5.0"}
 ] 
