@@ -1,7 +1,7 @@
 opam-version: "1"
 maintainer: "john.else@citrix.com"
 build: [
-  ["./configure" "--default_inventory" "%{prefix}%/etc/xcp/inventory"]
+  ["./configure"] 
   ["make"]
   ["make" "install"]
 ]
