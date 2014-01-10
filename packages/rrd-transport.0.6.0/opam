@@ -7,4 +7,4 @@ build: [
 remove: [
   [make "PREFIX=%{prefix}%" "uninstall"]
 ]
-depends: ["oasis" "cmdliner" "cstruct" {>= "1.0.1"} "crc" "xcp" "xcp-rrd" "gnt"]
+depends: ["cmdliner" "cstruct" {>= "1.0.1"} "crc" "xcp" "xcp-rrd" "gnt"]
