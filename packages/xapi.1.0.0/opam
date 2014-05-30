@@ -14,8 +14,7 @@ build: [
   "--xhadir" "%{bin}%/xha" 
   "--bindir" "%{bin}%" 
   "--sbindir" "%{bin}%"
-  "--etcdir" "%{prefix}%/etc" 
-  "--vardir" "/var/lib/xcp" ]
+  "--etcdir" "%{prefix}%/etc" ]
   [make "version"]
   ["omake" "phase1"]
   ["omake" "phase2"]
@@ -28,4 +27,6 @@ remove: [
 depends: [
   "ocamlfind" "xcp" "xen-api-libs-transitional" "xen-api-client" "omake" "netdev" "cdrom" "fd-send-recv" "forkexecd" "libvhd" "nbd" "netdev" "oclock" "ounit" "rpc" "ssl" "stdext" "tapctl" "xenctrl" "xenstore"
   "xcp-inventory"
+  "tar-format"
+  "opasswd"
 ] 
