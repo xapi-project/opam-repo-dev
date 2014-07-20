@@ -53,7 +53,8 @@ function build_one {
   pkg=$1
   echo build one: $pkg
   rm -rf ~/.opam
-  opam init .
+  opam init
+  opam remote add test .
   case $OCAML_VERSION in
   4.02.*)
     opam switch 4.02.0+trunk
