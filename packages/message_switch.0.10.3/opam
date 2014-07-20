@@ -1,9 +1,10 @@
 opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
+  [make configure]
   ["./configure" "--bindir" "%{bin}%"]
-  ["make"]
-  ["make" "install"]
+  [make]
+  [make "install"]
 ]
 remove: [
   ["ocamlfind" "remove" "message_switch"]
@@ -12,7 +13,6 @@ depends: [
   "ocamlfind"
   "cohttp" {>= "0.9.8"}
   "rpc"
-  "xenstore"
   "ounit"
   "syslog"
   "uri"

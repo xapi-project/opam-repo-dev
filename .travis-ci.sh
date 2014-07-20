@@ -45,7 +45,7 @@ cd $TRAVIS_BUILD_DIR
 echo Pull request:
 cat pullreq.diff
 # CR: this will be replaced with the OCamlot analysis of affected packages
-cat pullreq.diff | sort -u | grep '^... b/packages' | sed -E 's,\+\+\+ b/packages/.*/(.*)/.*,\1,' | grep -v '^files' | awk -F. '{print $1}'| sort -u > tobuild.txt
+cat pullreq.diff | sort -u | grep '^... b/packages' | sed -E 's,\+\+\+ b/packages/(.*)/.*,\1,' | grep -v '^files' | awk -F. '{print $1}'| sort -u > tobuild.txt
 echo To Build:
 cat tobuild.txt
 
@@ -53,7 +53,8 @@ function build_one {
   pkg=$1
   echo build one: $pkg
   rm -rf ~/.opam
-  opam init .
+  opam init
+  opam remote add test .
   case $OCAML_VERSION in
   4.02.*)
     opam switch 4.02.0+trunk
@@ -65,12 +66,6 @@ function build_one {
   1.0.0) allpkgs=`opam list -s` ;;
   *) allpkgs=`opam list -s -a` ;;
   esac
-  # test for installability
-  ok=0
-  for pkgi in $allpkgs; do if [ "$pkgi" = "$pkg" ]; then ok=1; fi; done
-  if [ $ok = "0" ]; then
-    echo Skipping $pkg as not installable
-  else
     case $TRAVIS_OS_NAME in
     linux)
       depext=`opam install $pkg -e ubuntu`
@@ -108,7 +103,6 @@ function build_one {
         ;;
       esac
     fi
-  fi
 }
 
 for i in `cat tobuild.txt`; do
