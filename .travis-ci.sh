@@ -66,12 +66,6 @@ function build_one {
   1.0.0) allpkgs=`opam list -s` ;;
   *) allpkgs=`opam list -s -a` ;;
   esac
-  # test for installability
-  ok=0
-  for pkgi in $allpkgs; do if [ "$pkgi" = "$pkg" ]; then ok=1; fi; done
-  if [ $ok = "0" ]; then
-    echo Skipping $pkg as not installable
-  else
     case $TRAVIS_OS_NAME in
     linux)
       depext=`opam install $pkg -e ubuntu`
@@ -109,7 +103,6 @@ function build_one {
         ;;
       esac
     fi
-  fi
 }
 
 for i in `cat tobuild.txt`; do
