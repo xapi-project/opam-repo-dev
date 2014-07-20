@@ -1,9 +1,10 @@
 opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
-  ["./configure.ml" "--bindir" "%{bin}%"]
-  ["make"]
-  ["make" "install"]
+  [make configure]
+  ["./configure" "--bindir" "%{bin}%"]
+  [make]
+  [make "install"]
 ]
 remove: [
   ["ocamlfind" "remove" "message_switch"]
