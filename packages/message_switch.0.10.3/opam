@@ -1,7 +1,7 @@
 opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
-  ["./configure" "--bindir" "%{bin}%"]
+  ["./configure.ml" "--bindir" "%{bin}%"]
   ["make"]
   ["make" "install"]
 ]
@@ -12,7 +12,6 @@ depends: [
   "ocamlfind"
   "cohttp" {>= "0.9.8"}
   "rpc"
-  "xenstore"
   "ounit"
   "syslog"
   "uri"
