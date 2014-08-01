@@ -1,2 +1,2 @@
-archive: "https://github.com/xen-org/ocaml-xen-lowlevel-libs/archive/ocaml-xen-lowlevel-libs-0.9.0.tar.gz"
+archive: "https://github.com/xapi-project/ocaml-xen-lowlevel-libs/archive/ocaml-xen-lowlevel-libs-0.9.0.tar.gz"
 checksum: "ed8fbe55b40b03255a39c185061e40f6"
