@@ -1,12 +1,11 @@
 opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
-  ["obuild" "configure"]
-  ["obuild" "build"]
-  ["make" "install" "BINDIR=%{bin}%"]
+  [make]
+  [make "install" "BINDIR=%{bin}%"]
 ]
 remove: [
-  ["make" "uninstall" "BINDIR=%{bin}%"]
+  [make "uninstall" "BINDIR=%{bin}%"]
 ]
 depends: [
   "xcp"
@@ -17,4 +16,6 @@ depends: [
   "cohttp"
   "syslog"
   "obuild"
+  "vhdlib"
+  "tapctl"
 ]
