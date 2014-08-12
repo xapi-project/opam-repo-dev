@@ -13,3 +13,8 @@ remove: [
 depends: [
   "ocamlfind"
 ]
+depexts: [
+  [["debian"] ["libvirt-dev" "autoconf"]]
+  [["ubuntu"] ["libvirt-dev" "autoconf"]]
+]
+
