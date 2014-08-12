@@ -18,4 +18,7 @@ depends: [
   "xenctrl"
   "xenstore_transport"
   "xenops"
+  "io-page"
+  "xen-gnt"
+  "rrd-transport"
 ]
