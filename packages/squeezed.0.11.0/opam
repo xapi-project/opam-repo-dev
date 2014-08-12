@@ -1,0 +1,23 @@
+opam-version: "1"
+maintainer: "dave.scott@eu.citrix.com"
+build: [
+  ["./configure" "--prefix" prefix]
+  ["make"]
+  ["make" "install" "BINDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
+]
+remove: [
+  ["make" "uninstall" "BINDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
+]
+depends: [
+  "stdext"
+  "ocamlfind"
+  "uuidm"
+  "cohttp"
+  "uri"
+  "re"
+  "rpc"
+  "xcp"
+  "xenstore"
+  "xenstore_transport"
+  "xenctrl" {>= "0.9.20"}
+]
