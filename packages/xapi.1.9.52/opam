@@ -47,5 +47,5 @@ depends: [
   "xenstore"
   "xcp-inventory"
   "tar-format"
-  "opasswd"
+  "opasswd" {>= "0.9.3"}
 ] 
