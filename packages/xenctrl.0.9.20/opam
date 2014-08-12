@@ -1,13 +1,16 @@
 opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
-  ["make"]
-  ["make" "install"]
+  [make "configure"]
+  ["./configure" "--disable-xenlight"]
+  [make]
+  [make "install" "BINDIR=%{bin}%"]
 ]
 remove: [
-  ["make" "uninstall"]
+  [make "uninstall"]
 ]
 depends: [
   "ocamlfind"
   "lwt"
+  "cmdliner"
 ]
