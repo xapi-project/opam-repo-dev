@@ -12,3 +12,8 @@ depends: [
   "ocamlfind"
   "rpc" {>= "1.5.0"}
 ] 
+depexts: [
+  [["debian"] ["libdevmapper-dev"]]
+  [["ubuntu"] ["libdevmapper-dev"]]
+]
+
