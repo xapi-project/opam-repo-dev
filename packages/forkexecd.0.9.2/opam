@@ -15,4 +15,5 @@ depends: [
   "uuidm"
   "stdext"
   "re"
+  "xcp"
 ]
