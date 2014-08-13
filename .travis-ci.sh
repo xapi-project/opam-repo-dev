@@ -66,8 +66,6 @@ function build_one {
   1.0.0) allpkgs=`opam list -s` ;;
   *) allpkgs=`opam list -s -a` ;;
   esac
-    case $TRAVIS_OS_NAME in
-    linux)
       depext=`opam install $pkg -e ubuntu`
       echo Ubuntu depexts: $depext
       if [ "$depext" != "" ]; then
@@ -77,31 +75,11 @@ function build_one {
       if [ "$srcext" != "" ]; then
         curl -sL ${srcext} | bash
       fi  
-      ;;
-    osx)
-      depext=`opam install $pkg -e osx,homebrew`
-      echo Homebrew depexts: $depext
-      if [ "$depext" != "" ]; then
-        brew install $depext
-      fi
-      srcext=`opam install $pkg -e osx,source`
-      if [ "$srcext" != "" ]; then
-        curl -sL ${srcext} | bash
-      fi
-      ;;
-    esac
     opam install $pkg
     opam remove $pkg
     if [ "$depext" != "" ]; then
-      case $TRAVIS_OS_NAME in
-      linux) 
         sudo apt-get remove $depext
         sudo apt-get autoremove
-        ;;
-      osx)
-        brew remove $depext
-        ;;
-      esac
     fi
 }
 
