@@ -11,4 +11,8 @@ remove: [
 depends: [
   "ocamlfind"
   "rpc"
-] 
+]
+depexts: [
+  [["debian"] ["blktap-dev"]]
+  [["ubuntu"] ["blktap-dev"]]
+]
