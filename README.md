@@ -49,3 +49,12 @@ After making new changes to stdext, it sufficies to:
 opam update
 opam upgrade
 ```
+
+How does this relate to [xenserver/buildroot]?
+----------------------------------------------
+
+The [xenserver/buildroot] repo creates binary packages of released software, easily installable
+via a distro's native package manager. These binary packages are intended for users.
+
+Source packages built from this repo are intended for developers: quickly making changes, recompiling and
+testing.
