@@ -13,6 +13,6 @@ depends: [
   "rpc"
 ]
 depexts: [
-  [["debian"] ["blktap-dev"]]
-  [["ubuntu"] ["blktap-dev"]]
+  [["debian"] ["blktap-dev" "uuid-dev"]]
+  [["ubuntu"] ["blktap-dev" "uuid-dev"]]
 ]
