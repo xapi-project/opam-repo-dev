@@ -1,0 +1,36 @@
+opam-version: "1"
+maintainer: "dave.scott@eu.citrix.com"
+build: [
+  [make "configure"]
+  ["./configure" "--bindir" "%{bin}%" "--sbindir" "%{bin}%" "--libexecdir" "%{bin}%" "--scriptsdir" "%{bin}%" "--etcdir" "%{prefix}%/etc"]
+  [make]
+  [make "install"]
+]
+remove: [
+  [make "uninstall"]
+]
+depends: [
+  "obuild"
+  "ocamlfind"
+  "xmlm"
+  "uuidm"
+  "uutf"
+  "ounit"
+  "cohttp"
+  "uri"
+  "re"
+  "rpc"
+  "xcp" {>= "0.9.18"}
+  "forkexecd"
+  "fd-send-recv"
+  "sexplib"
+  "xenstore"
+  "xenstore_transport"
+  "xenctrl" {= "0.9.20"}
+  "qmp"
+  "oclock"
+  "xcp-inventory"
+]
+depopts: [
+  "libvirt" {> "0.6.1.2"}
+]
