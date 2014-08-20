@@ -29,6 +29,8 @@ depends: [
   "xenctrl" {= "0.9.20"}
   "qmp"
   "oclock"
-  "libvirt"
   "xcp-inventory"
+]
+depopts: [
+  "libvirt" {> "0.6.1.2"}
 ]
