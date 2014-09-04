@@ -1,1 +1,2 @@
-git: "git://github.com/johnelse/ocaml-xapi-plugin"
+archive: "https://github.com/xapi-project/ocaml-xapi-plugin/archive/0.1.0.tar.gz"
+checksum: "cb24f1cce16989e9005b39a6aca42a5e"
