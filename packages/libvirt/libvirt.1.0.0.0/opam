@@ -16,6 +16,6 @@ depends: [
 depexts: [
   [["debian"] ["libvirt-dev" "autoconf"]]
   [["ubuntu"] ["libvirt-dev" "autoconf"]]
-  [["XenServer"] ["libvirt-devel" "autoconf"]]
+  [["centos"] ["libvirt-devel" "autoconf"]]
 ]
 

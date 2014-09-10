@@ -15,6 +15,6 @@ depends: [
 depexts: [
   [["debian"] ["libdevmapper-dev"]]
   [["ubuntu"] ["libdevmapper-dev"]]
-  [["XenServer"] ["device-mapper-devel"]]
+  [["centos"] ["device-mapper-devel"]]
 ]
 
