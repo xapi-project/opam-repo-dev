@@ -85,6 +85,7 @@ function build_one {
     fi
 }
 
+eval `opam config env`
 sudo cp $OCAML_TOPLEVEL_PATH/topfind $(ocamlc -where)
 
 for i in `cat tobuild.txt`; do
