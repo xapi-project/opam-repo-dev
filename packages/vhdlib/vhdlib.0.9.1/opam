@@ -15,5 +15,5 @@ depends: [
 depexts: [
   [["debian"] ["blktap-dev" "uuid-dev"]]
   [["ubuntu"] ["blktap-dev" "uuid-dev"]]
-  [["centos"] ["blktap-devel" "uuid-devel"]]
+  [["centos"] ["blktap-devel" "libuuid-devel"]]
 ]
