@@ -78,6 +78,8 @@ function build_one {
       if [ "$srcext" != "" ]; then
         curl -sL ${srcext} | bash
       fi  
+    opam install ocamlfind
+    sudo mkdir -p $(ocamlc -where)
     eval `opam config env`
     sudo cp $OCAML_TOPLEVEL_PATH/topfind $(ocamlc -where)
 
