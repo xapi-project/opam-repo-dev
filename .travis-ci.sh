@@ -85,6 +85,8 @@ function build_one {
     fi
 }
 
+sudo cp $OCAML_TOPLEVEL_PATH/topfind $(ocamlc -where)
+
 for i in `cat tobuild.txt`; do
   build_one $i
 done
