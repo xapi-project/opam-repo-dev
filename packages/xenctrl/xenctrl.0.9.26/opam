@@ -17,5 +17,6 @@ depexts: [
   [["debian"] ["libxen-dev"]]
   [["ubuntu"] ["libxen-dev"]]
   [["centos"] ["xen-devel"]]
+  [["xenserver"] ["xen-dom0-libs-devel" "xen-libs-devel"]]
 ]
 
