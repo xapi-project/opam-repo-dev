@@ -56,6 +56,7 @@ function build_one {
   echo build one: $pkg
   rm -rf ~/.opam
   opam init
+
   opam remote add test .
   case $OCAML_VERSION in
   4.02.*)
@@ -77,6 +78,11 @@ function build_one {
       if [ "$srcext" != "" ]; then
         curl -sL ${srcext} | bash
       fi  
+    opam install ocamlfind
+    sudo mkdir -p $(ocamlc -where)
+    eval `opam config env`
+    sudo cp $OCAML_TOPLEVEL_PATH/topfind $(ocamlc -where)
+
     opam install $pkg
     opam remove $pkg
     if [ "$depext" != "" ]; then

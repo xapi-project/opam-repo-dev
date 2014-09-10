@@ -48,4 +48,11 @@ depends: [
   "xcp-inventory"
   "tar-format"
   "opasswd" {>= "0.9.3"}
-] 
+  "rrdd-plugin"
+]
+depexts: [
+  [["centos"] ["pam-devel"]]
+  [["debian"] ["libpam-dev"]]
+  [["ubuntu"] ["libpam-dev"]]
+]
+
