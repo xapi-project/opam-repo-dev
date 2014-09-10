@@ -15,4 +15,5 @@ depends: [
 depexts: [
   [["debian"] ["blktap-dev" "uuid-dev"]]
   [["ubuntu"] ["blktap-dev" "uuid-dev"]]
+  [["XenServer"] ["blktap-devel" "uuid-devel"]]
 ]
