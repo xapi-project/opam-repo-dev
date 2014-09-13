@@ -7,4 +7,4 @@ build: [
 remove: [
   [make "PREFIX=%{prefix}%" "BINDIR=%{bin}%" "uninstall"]
 ]
-depends: ["obuild" "stdext" "xen-api-libs-transitional" "xenctrl" "xenstore" "xenstore_transport"]
+depends: ["obuild" "xapi-stdext" "xen-api-libs-transitional" "xenctrl" "xenstore" "xenstore_transport"]

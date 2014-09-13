@@ -21,7 +21,7 @@ remove: [
 ]
 depends: [
   "ocamlfind"
-  "stdext"
+  "xapi-stdext"
   "xmlm"
   "forkexecd"
   "rpc"

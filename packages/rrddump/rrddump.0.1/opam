@@ -4,7 +4,10 @@ build: [
   ["make"]
   ["make" "PREFIX=%{prefix}%" "install"]
 ]
-remove: [
-  ["make" "PREFIX=%{prefix}%" "uninstall"]
+remove: ["make" "PREFIX=%{prefix}%" "uninstall"]
+depends: [
+  "obuild"
+  "xapi-rrd"
+  "xapi-stdext"
+  "xmlm"
 ]
-depends: ["obuild" "xapi-rrd" "stdext" "xmlm"]

@@ -13,7 +13,7 @@ depends: [
   "xcp"
   "xen-api-libs-transitional"
   "xcp-inventory"
-  "stdext"
+  "xapi-stdext"
   "forkexecd"
   "xenctrl"
   "xenstore_transport"

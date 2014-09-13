@@ -41,7 +41,7 @@ depends: [
   "ounit"
   "rpc"
   "ssl"
-  "stdext"
+  "xapi-stdext"
   "tapctl"
   "xenctrl"
   "xenstore"

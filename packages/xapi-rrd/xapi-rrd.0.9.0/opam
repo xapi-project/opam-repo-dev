@@ -7,4 +7,4 @@ build: [
 remove: [
   ["make" "PREFIX=%{prefix}%" "uninstall"]
 ]
-depends: ["obuild" "rpc" "stdext"]
+depends: ["obuild" "rpc" "xapi-stdext"]
