@@ -5,11 +5,9 @@ build: [
   ["make"]
   ["make" "install" "BINDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
 ]
-remove: [
-  ["make" "uninstall" "BINDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
-]
+remove: ["make" "uninstall" "BINDIR=%{bin}%" "ETCDIR=%{prefix}%/etc"]
 depends: [
-  "stdext"
+  "xapi-stdext"
   "ocamlfind"
   "uuidm"
   "cohttp"

@@ -4,7 +4,12 @@ build: [
   [make]
   [make "PREFIX=%{prefix}%" "install"]
 ]
-remove: [
-  [make "PREFIX=%{prefix}%" "uninstall"]
+remove: [make "PREFIX=%{prefix}%" "uninstall"]
+depends: [
+  "rpc"
+  "forkexecd"
+  "xapi-stdext"
+  "xcp"
+  "xen-api-libs-transitional"
+  "rrd-transport"
 ]
-depends: ["rpc" "forkexecd" "stdext" "xcp" "xen-api-libs-transitional" "rrd-transport"]
