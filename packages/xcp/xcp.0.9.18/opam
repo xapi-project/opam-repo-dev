@@ -15,6 +15,6 @@ depends: [ "uri"
            "rpc" {> "1.4.0"}
            "ocamlfind"
            "message_switch"
-	   "xcp-rrd"
+	   "xapi-rrd"
           ]
 
