@@ -1,2 +1,0 @@
-Low-level hypercall bindings. These are based on the code in xen-unstable.hg,
-with minor patches for out-of-tree building.
