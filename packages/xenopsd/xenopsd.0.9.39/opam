@@ -20,7 +20,7 @@ depends: [
   "uri"
   "re"
   "rpc"
-  "xcp" {>= "0.9.18"}
+  "xcp" {>= "0.9.19"}
   "xapi-forkexecd"
   "fd-send-recv"
   "sexplib"
