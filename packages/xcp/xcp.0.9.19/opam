@@ -14,7 +14,7 @@ depends: [ "uri"
            "xmlm"
            "rpc" {> "1.4.0"}
            "ocamlfind"
-           "message_switch"
+           "message-switch"
 	   "xapi-rrd"
            "xcp-inventory"
           ]
