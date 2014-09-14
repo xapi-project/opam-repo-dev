@@ -27,7 +27,7 @@ depends: [
   "rpc"
   "ssl"
   "xapi-stdext"
-  "tapctl"
+  "xapi-tapctl"
   "xenctrl"
   "xenstore"
   "xapi-inventory"

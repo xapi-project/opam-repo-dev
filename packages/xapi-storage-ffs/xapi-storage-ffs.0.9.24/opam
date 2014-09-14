@@ -15,5 +15,5 @@ depends: [
   "syslog"
   "obuild"
   "vhdlib"
-  "tapctl"
+  "xapi-tapctl"
 ]
