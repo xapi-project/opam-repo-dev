@@ -33,7 +33,7 @@ depends: [
   "xapi-inventory"
   "tar-format"
   "opasswd" {>= "0.9.3"}
-  "rrdd-plugin"
+  "xapi-rrdd-plugin"
 ]
 depexts: [
   [["centos"] ["pam-devel"]]
