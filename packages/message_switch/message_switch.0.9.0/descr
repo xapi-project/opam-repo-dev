@@ -1,4 +1,0 @@
-A simple store-and-forward message switch.
-
-This is a prototype of a message switch which will allow the components
-of a disaggregated system to talk to each other.

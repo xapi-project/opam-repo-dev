@@ -4,11 +4,9 @@ build: [
   [make]
   [make "install" "BINDIR=%{bin}%"]
 ]
-remove: [
-  [make "uninstall" "BINDIR=%{bin}%"]
-]
+remove: [make "uninstall" "BINDIR=%{bin}%"]
 depends: [
-  "xcp"
+  "xapi-idl"
   "re"
   "rpc"
   "ocamlfind"
@@ -17,5 +15,5 @@ depends: [
   "syslog"
   "obuild"
   "vhdlib"
-  "tapctl"
+  "xapi-tapctl"
 ]

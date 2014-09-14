@@ -1,58 +1,42 @@
 opam-version: "1"
 maintainer: "jonathan.ludlam@eu.citrix.com"
 build: [
-  ["./configure"
-  "--varpatchdir" "%{prefix}%/var/patch"
-  "--optdir" "%{lib}%/xcp"
-  "--plugindir" "%{lib}%/xcp/plugins"
-  "--hooksdir" "%{prefix}%/etc/hook-scripts"
-  "--xapiconf" "%{prefix}%/etc/xapi.conf" 
-  "--libexecdir" "%{lib}%/xcp/bin"
-  "--scriptsdir" "%{lib}%/xcp/scripts" 
-  "--sharedir" "%{share}%/xcp"
-  "--webdir" "%{share}%/xcp/web"
-  "--xhadir" "%{bin}%/xha" 
-  "--bindir" "%{bin}%" 
-  "--sbindir" "%{bin}%"
-  "--etcdir" "%{prefix}%/etc" ]
+  ["./configure" "--varpatchdir" "%{prefix}%/var/patch" "--optdir" "%{lib}%/xcp" "--plugindir" "%{lib}%/xcp/plugins" "--hooksdir" "%{prefix}%/etc/hook-scripts" "--xapiconf" "%{prefix}%/etc/xapi.conf" "--libexecdir" "%{lib}%/xcp/bin" "--scriptsdir" "%{lib}%/xcp/scripts" "--sharedir" "%{share}%/xcp" "--webdir" "%{share}%/xcp/web" "--xhadir" "%{bin}%/xha" "--bindir" "%{bin}%" "--sbindir" "%{bin}%" "--etcdir" "%{prefix}%/etc"]
   [make "version"]
   ["omake" "phase1"]
   ["omake" "phase2"]
   ["omake" "ocaml/xapi/xapi"]
   ["install" "-m" "0755" "ocaml/xapi/xapi.opt" "%{bin}%/xapi"]
 ]
-remove: [
-  ["rm" "%{bin}%/xapi"]
-]
+remove: ["rm" "%{bin}%/xapi"]
 depends: [
   "ocamlfind"
-  "xcp"
-  "xen-api-libs-transitional"
+  "xapi-idl"
+  "xapi-libs-transitional"
   "xen-api-client"
   "omake"
-  "netdev"
+  "xapi-netdev"
   "cdrom"
   "fd-send-recv"
   "xapi-forkexecd"
   "libvhd"
   "nbd"
-  "netdev"
+  "xapi-netdev"
   "oclock"
   "ounit"
   "rpc"
   "ssl"
   "xapi-stdext"
-  "tapctl"
+  "xapi-tapctl"
   "xenctrl"
   "xenstore"
-  "xcp-inventory"
+  "xapi-inventory"
   "tar-format"
   "opasswd" {>= "0.9.3"}
-  "rrdd-plugin"
+  "xapi-rrdd-plugin"
 ]
 depexts: [
   [["centos"] ["pam-devel"]]
   [["debian"] ["libpam-dev"]]
   [["ubuntu"] ["libpam-dev"]]
 ]
-

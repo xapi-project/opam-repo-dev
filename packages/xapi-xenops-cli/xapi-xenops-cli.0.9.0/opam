@@ -6,13 +6,9 @@ build: [
 ]
 remove: ["make" "uninstall" "BINDIR=%{bin}%"]
 depends: [
-  "libvirt"
-  "xapi-idl"
-  "re"
-  "rpc"
-  "cmdliner"
-  "cohttp"
-  "syslog"
-  "obuild"
   "ocamlfind"
+  "uuidm"
+  "cmdliner"
+  "rpc"
+  "xapi-idl"
 ]
