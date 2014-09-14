@@ -15,7 +15,7 @@ depends: [
   "xapi-forkexecd"
   "xenctrl"
   "xenstore_transport"
-  "xenops"
+  "xapi-xenops"
   "io-page"
   "xen-gnt"
   "xapi-rrd-transport"
