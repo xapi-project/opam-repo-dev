@@ -18,5 +18,5 @@ depends: [
   "xenops"
   "io-page"
   "xen-gnt"
-  "rrd-transport"
+  "xapi-rrd-transport"
 ]

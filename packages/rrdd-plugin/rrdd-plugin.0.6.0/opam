@@ -11,5 +11,5 @@ depends: [
   "xapi-stdext"
   "xapi-idl"
   "xapi-libs-transitional"
-  "rrd-transport"
+  "xapi-rrd-transport"
 ]
