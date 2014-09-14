@@ -1,3 +1,4 @@
-Citrix's deprecated standard extension library
+A deprecated collection of utility functions
 
-WARNING: DO NOT USE UNLESS ABSOLUTELY NECESSARY!
+This library is provided for a transitionary period only.
+No new code should use this library.

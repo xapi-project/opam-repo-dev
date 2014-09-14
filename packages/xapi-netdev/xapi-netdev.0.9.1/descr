@@ -1,1 +1,4 @@
-Network device related bindings for ocaml
+Host network device configuration
+
+This library allows local bridges and openvswitch instances
+to be configured.
