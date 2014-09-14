@@ -5,11 +5,9 @@ build: [
   ["obuild" "build"]
   ["make" "install" "BINDIR=%{bin}%"]
 ]
-remove: [
-  ["make" "uninstall" "BINDIR=%{bin}%"]
-]
+remove: ["make" "uninstall" "BINDIR=%{bin}%"]
 depends: [
-  "xcp"
+  "xapi-idl"
   "re"
   "rpc"
   "ocamlfind"

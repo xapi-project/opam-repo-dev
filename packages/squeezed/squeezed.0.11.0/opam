@@ -14,7 +14,7 @@ depends: [
   "uri"
   "re"
   "rpc"
-  "xcp"
+  "xapi-idl"
   "xenstore"
   "xenstore_transport"
   "xenctrl" {>= "0.9.20"}

@@ -6,9 +6,7 @@ build: [
   [make]
   [make "install"]
 ]
-remove: [
-  [make "uninstall"]
-]
+remove: [make "uninstall"]
 depends: [
   "obuild"
   "ocamlfind"
@@ -20,7 +18,7 @@ depends: [
   "uri"
   "re"
   "rpc"
-  "xcp" {>= "0.9.19"}
+  "xapi-idl" {>= "0.9.19"}
   "xapi-forkexecd"
   "fd-send-recv"
   "sexplib"
@@ -31,6 +29,4 @@ depends: [
   "oclock"
   "xapi-inventory"
 ]
-depopts: [
-  "libvirt" {> "0.6.1.2"}
-]
+depopts: "libvirt" {> "0.6.1.2"}

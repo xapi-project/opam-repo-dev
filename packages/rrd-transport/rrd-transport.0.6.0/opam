@@ -4,7 +4,12 @@ build: [
   [make]
   [make "PREFIX=%{prefix}%" "install"]
 ]
-remove: [
-  [make "PREFIX=%{prefix}%" "uninstall"]
+remove: [make "PREFIX=%{prefix}%" "uninstall"]
+depends: [
+  "cmdliner"
+  "cstruct" {>= "1.0.1"}
+  "crc"
+  "xapi-idl"
+  "xapi-rrd"
+  "xen-gnt"
 ]
-depends: ["cmdliner" "cstruct" {>= "1.0.1"} "crc" "xcp" "xapi-rrd" "xen-gnt"]

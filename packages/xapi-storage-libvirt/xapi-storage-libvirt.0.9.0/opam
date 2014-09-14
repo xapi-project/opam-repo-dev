@@ -4,12 +4,10 @@ build: [
   ["make"]
   ["make" "install" "BINDIR=%{bin}%"]
 ]
-remove: [
-  ["make" "uninstall" "BINDIR=%{bin}%"]
-]
+remove: ["make" "uninstall" "BINDIR=%{bin}%"]
 depends: [
   "libvirt"
-  "xcp"
+  "xapi-idl"
   "re"
   "rpc"
   "cmdliner"

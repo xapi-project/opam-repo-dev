@@ -9,7 +9,7 @@ depends: [
   "rpc"
   "xapi-forkexecd"
   "xapi-stdext"
-  "xcp"
+  "xapi-idl"
   "xapi-libs-transitional"
   "rrd-transport"
 ]

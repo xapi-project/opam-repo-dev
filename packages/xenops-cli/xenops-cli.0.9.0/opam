@@ -4,13 +4,11 @@ build: [
   ["make"]
   ["make" "install" "BINDIR=%{bin}%"]
 ]
-remove: [
-  ["make" "uninstall" "BINDIR=%{bin}%"]
-]
+remove: ["make" "uninstall" "BINDIR=%{bin}%"]
 depends: [
   "ocamlfind"
   "uuidm"
   "cmdliner"
   "rpc"
-  "xcp"
+  "xapi-idl"
 ]
