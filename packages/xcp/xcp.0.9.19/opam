@@ -16,6 +16,6 @@ depends: [ "uri"
            "ocamlfind"
            "message-switch"
 	   "xapi-rrd"
-           "xcp-inventory"
+           "xapi-inventory"
           ]
 

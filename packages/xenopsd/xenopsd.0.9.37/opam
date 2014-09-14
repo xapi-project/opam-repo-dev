@@ -30,5 +30,5 @@ depends: [
   "qmp"
   "oclock"
   "libvirt"
-  "xcp-inventory"
+  "xapi-inventory"
 ]

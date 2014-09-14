@@ -45,7 +45,7 @@ depends: [
   "tapctl"
   "xenctrl"
   "xenstore"
-  "xcp-inventory"
+  "xapi-inventory"
   "tar-format"
   "opasswd" {>= "0.9.3"}
   "rrdd-plugin"

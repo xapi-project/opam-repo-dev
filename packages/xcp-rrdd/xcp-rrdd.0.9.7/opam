@@ -12,7 +12,7 @@ depends: [
   "ocamlfind"
   "xcp"
   "xapi-libs-transitional"
-  "xcp-inventory"
+  "xapi-inventory"
   "xapi-stdext"
   "xapi-forkexecd"
   "xenctrl"
