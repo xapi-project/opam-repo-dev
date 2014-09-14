@@ -27,7 +27,7 @@ remove: [
 depends: [
   "ocamlfind"
   "xcp"
-  "xen-api-libs-transitional"
+  "xapi-libs-transitional"
   "xen-api-client"
   "omake"
   "netdev"

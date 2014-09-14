@@ -11,7 +11,7 @@ depends: [
   "obuild"
   "ocamlfind"
   "xcp"
-  "xen-api-libs-transitional"
+  "xapi-libs-transitional"
   "xcp-inventory"
   "xapi-stdext"
   "xapi-forkexecd"

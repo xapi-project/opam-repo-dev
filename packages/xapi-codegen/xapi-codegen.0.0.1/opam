@@ -7,4 +7,4 @@ build: [
 remove: [
   ["make" "BINDIR=%{bin}%" "uninstall"]
 ]
-depends: ["obuild" "xapi-stdext" "rpc" "xen-api-libs-transitional" ]
+depends: ["obuild" "xapi-stdext" "rpc" "xapi-libs-transitional" ]

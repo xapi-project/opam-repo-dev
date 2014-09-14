@@ -10,6 +10,6 @@ depends: [
   "xapi-forkexecd"
   "xapi-stdext"
   "xcp"
-  "xen-api-libs-transitional"
+  "xapi-libs-transitional"
   "rrd-transport"
 ]
