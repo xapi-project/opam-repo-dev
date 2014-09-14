@@ -33,7 +33,7 @@ depends: [
   "netdev"
   "cdrom"
   "fd-send-recv"
-  "forkexecd"
+  "xapi-forkexecd"
   "libvhd"
   "nbd"
   "netdev"

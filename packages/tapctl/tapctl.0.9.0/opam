@@ -10,5 +10,5 @@ remove: [
 depends: [
   "ocamlfind"
   "xapi-stdext"
-  "forkexecd"
+  "xapi-forkexecd"
 ] 

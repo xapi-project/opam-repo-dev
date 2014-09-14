@@ -23,7 +23,7 @@ depends: [
   "ocamlfind"
   "xapi-stdext"
   "xmlm"
-  "forkexecd"
+  "xapi-forkexecd"
   "rpc"
   "xenctrl"
   "xenstore"

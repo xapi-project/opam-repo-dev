@@ -14,7 +14,7 @@ depends: [
   "xen-api-libs-transitional"
   "xcp-inventory"
   "xapi-stdext"
-  "forkexecd"
+  "xapi-forkexecd"
   "xenctrl"
   "xenstore_transport"
   "xenops"

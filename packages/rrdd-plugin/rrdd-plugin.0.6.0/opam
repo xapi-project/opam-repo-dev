@@ -7,7 +7,7 @@ build: [
 remove: [make "PREFIX=%{prefix}%" "uninstall"]
 depends: [
   "rpc"
-  "forkexecd"
+  "xapi-forkexecd"
   "xapi-stdext"
   "xcp"
   "xen-api-libs-transitional"

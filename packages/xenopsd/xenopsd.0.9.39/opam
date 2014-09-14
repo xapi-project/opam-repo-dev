@@ -21,7 +21,7 @@ depends: [
   "re"
   "rpc"
   "xcp" {>= "0.9.18"}
-  "forkexecd"
+  "xapi-forkexecd"
   "fd-send-recv"
   "sexplib"
   "xenstore"
