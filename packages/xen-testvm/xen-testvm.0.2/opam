@@ -1,0 +1,16 @@
+opam-version: "1"
+maintainer: "dave.scott@eu.citrix.com"
+build: [
+  [make]
+  ["cp" "mir-test.xen" "%{bin}%" ]
+]
+remove: [
+  ["rm" "%{bin}%/mir-test.xen"]
+]
+depends: [
+  "ocamlfind"
+  "xen-testvm-idl"
+  "mirage-block-xen"
+  "mirage-console-xen"
+  "vchan"
+]
