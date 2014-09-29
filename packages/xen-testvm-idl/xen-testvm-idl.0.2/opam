@@ -1,0 +1,22 @@
+opam-version: "1"
+maintainer: "dave.scott@eu.citrix.com"
+build: [
+  [make]
+  [make "install"]
+]
+remove: [make "uninstall"]
+depends: [
+  "ocamlfind"
+  "cohttp"
+  "rpc"
+  "vchan"
+  "mirage"
+  "mirage-types"
+  "lwt"
+  "cmdliner"
+  "io-page"
+  "xen-evtchn"
+  "xen-gnt"
+  "xenstore"
+  "xenstore_transport"
+]
