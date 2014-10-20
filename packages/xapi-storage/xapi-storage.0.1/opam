@@ -2,7 +2,7 @@ opam-version: "1"
 maintainer: "dave.scott@citrix.com"
 build: [
   [make]
-  [make "install"]
+  [make "install" "PREFIX=%{prefix}%"]
 ]
 remove: ["make" "uninstall"]
 depends: [
