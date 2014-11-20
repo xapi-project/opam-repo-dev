@@ -8,8 +8,8 @@ build: [
 remove: ["rm" "%{bin}%/xapi"]
 depends: [
   "ocamlfind"
-  "xapi-idl"
-  "xapi-libs-transitional"
+  "xapi-idl" {>= "0.9.21"}
+  "xapi-libs-transitional" {>= "0.9.7"}
   "xapi-netdev"
   "omake"
   "cdrom"
@@ -21,7 +21,7 @@ depends: [
   "ounit"
   "rpc"
   "ssl"
-  "xapi-stdext"
+  "xapi-stdext" {>= "0.13.0"}
   "xapi-tapctl"
   "xenctrl"
   "xenstore"

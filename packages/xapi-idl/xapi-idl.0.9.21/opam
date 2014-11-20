@@ -15,7 +15,7 @@ depends: [ "uri"
            "rpc" {> "1.4.0"}
            "ocamlfind"
            "message-switch"
-           "xapi-stdext"
+           "xapi-stdext" {>= "0.13.0"}
 	   "xapi-rrd"
            "xapi-inventory"
            "xapi-backtrace"

@@ -17,17 +17,20 @@ depends: [
   "uri"
   "re"
   "rpc"
-  "xapi-idl" {>= "0.9.19"}
+  "xapi-idl" {>= "0.9.21"}
   "xapi-forkexecd"
-  "xapi-stdext"
+  "xapi-stdext" {>= "0.13.0"}
   "fd-send-recv"
   "sexplib"
   "xenstore"
   "xenstore_transport"
-  "xenctrl" {>= "0.9.25"}
+  "xenctrl" {>= "0.9.28"}
   "qmp"
   "oclock"
   "xapi-inventory"
 ]
 depopts: "libvirt" {> "0.6.1.2"}
 ocaml-version: [>= "4.01.0"]
+patches: [
+  "patches/Makefile.patch"
+]
