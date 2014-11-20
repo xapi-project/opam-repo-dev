@@ -10,7 +10,9 @@ build: [
   [make "install" "BINDIR=%{bin}%"]
 ]
 remove: [
-  [make "uninstall"]
+  ["ocamlfind" "remove" "xentoollog"]
+  ["ocamlfind" "remove" "xenctrl"]
+  ["ocamlfind" "remove" "xenlight"]
 ]
 depends: [
   "ocamlfind"
