@@ -8,8 +8,8 @@ remove: [make "PREFIX=%{prefix}%" "uninstall"]
 depends: [
   "rpc"
   "xapi-forkexecd"
-  "xapi-stdext"
-  "xapi-idl"
-  "xapi-libs-transitional"
+  "xapi-stdext" {>= "0.13.0"}
+  "xapi-idl" {>= "0.9.21"}
+  "xapi-libs-transitional" {>= "0.9.7"}
   "xapi-rrd-transport"
 ]

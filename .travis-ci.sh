@@ -22,7 +22,9 @@ install_on_linux () {
   4.00.1,1.1.0) ppa=avsm/ocaml40+opam11 ;;
   4.01.0,1.0.0) ppa=avsm/ocaml41+opam10 ;;
   4.01.0,1.1.0) ppa=avsm/ocaml41+opam11 ;;
-  4.02.0,1.1.0) ppa=avsm/ocaml41+opam11 ;;
+  4.01.0,1.1.0) ppa=avsm/ocaml41+opam12 ;;
+  4.02.0,1.1.0) ppa=avsm/ocaml42+opam11 ;;
+  4.02.0,1.2.0) ppa=avsm/ocaml42+opam12 ;;
   *) echo Unknown $OCAML_VERSION,$OPAM_VERSION; exit 1 ;;
   esac
 
@@ -47,7 +49,7 @@ cd $TRAVIS_BUILD_DIR
 echo Pull request:
 cat pullreq.diff
 # CR: this will be replaced with the OCamlot analysis of affected packages
-cat pullreq.diff | sort -u | grep '^... b/packages' | sed -E 's,\+\+\+ b/packages/.*/(.*)/.*,\1,' | grep -v '^files' | awk -F. '{print $1}'| sort -u > tobuild.txt
+cat pullreq.diff | sort -u | grep '^... b/packages' | sed -E 's,\+\+\+ b/packages/.*/(.*)/.*,\1,' | grep -v '^files' | grep -v '^patches' | awk -F. '{print $1}'| sort -u > tobuild.txt
 echo To Build:
 cat tobuild.txt
 
