@@ -1,0 +1,4 @@
+JS bindings for HTML5 local storage
+
+This allows your application to persist data on the user's local
+machine.
