@@ -60,12 +60,6 @@ function build_one {
   opam init
 
   opam remote add test .
-  case $OCAML_VERSION in
-  4.02.*)
-    opam switch 4.02.0+trunk
-    eval `opam config env`
-    ;;
-  esac
   # list all packages changed from opam 1.0 to 1.1
   case "$OPAM_VERSION" in
   1.0.0) allpkgs=`opam list -s` ;;
