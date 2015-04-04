@@ -1,0 +1,15 @@
+opam-version: "1"
+maintainer: "john.else@citrix.com"
+build: [
+  [make]
+  [make "PREFIX=%{prefix}%" "install"]
+]
+remove: [make "PREFIX=%{prefix}%" "uninstall"]
+depends: [
+  "rpc"
+  "xapi-forkexecd"
+  "xapi-stdext" {>= "0.13.0"}
+  "xapi-idl" {>= "0.9.21"}
+  "xapi-libs-transitional" {>= "0.9.7"}
+  "xapi-rrd-transport"
+]
