@@ -1,0 +1,26 @@
+commit d63a3b4e051f4b7cd27b5d67bb636d5c7eaa8dc9
+Author: Jon Ludlam <jonathan.ludlam@citrix.com>
+Date:   Mon Apr 13 15:01:53 2015 +0100
+
+    Bring float_of_string more in line with the OCaml implementation.
+    
+    This adds the ability to parse infinities of various capitalisation
+    and sign. The following now works in the JS toplevel:
+    
+        float_of_string (string_of_float infinity)
+    
+    Signed-off-by: Jon Ludlam <jonathan.ludlam@citrix.com>
+
+diff --git a/runtime/stdlib.js b/runtime/stdlib.js
+index 446c212..f2b456f 100644
+--- a/runtime/stdlib.js
++++ b/runtime/stdlib.js
+@@ -453,6 +453,8 @@ function caml_float_of_string(s) {
+     res = +s.substring(0,pidx);
+     return res * Math.pow(2,exp);
+   }
++  if(/^\+?inf(inity)?$/i.test(s)) return Infinity;
++  if(/^-inf(inity)?$/i.test(s)) return -Infinity;
+   caml_failwith("float_of_string");
+ }
+ 
