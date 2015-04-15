@@ -8,9 +8,9 @@ build: [
   [make "install"]
 ]
 depends: [
-  "camldm" {>= "2.0.0"}
-  "shared-block-ring" {>= "2.0.0"}
-  "mirage-block-volume" {>= "2.0.0"}
+  "camldm" {>= "0.9.1"}
+  "shared-block-ring" {>= "1.1.1"}
+  "mirage-block-volume" {>= "0.9.1"}
   "lwt"
   "ocamlfind"
   "sexplib"
