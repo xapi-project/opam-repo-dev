@@ -15,7 +15,7 @@ remove: [
 ]
 depends: [
   "cstruct" {>= "0.7.1"}
-  "camldm" {>= "2.0.0"}
+  "camldm" {>= "0.9.1"}
   "lwt"
   "ocamlfind"
   "sexplib"
