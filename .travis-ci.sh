@@ -1,6 +1,6 @@
 echo pull req: $TRAVIS_PULL_REQUEST
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
-  curl https://github.com/$TRAVIS_REPO_SLUG/pull/$TRAVIS_PULL_REQUEST.diff -o pullreq.diff
+  curl -L https://github.com/$TRAVIS_REPO_SLUG/pull/$TRAVIS_PULL_REQUEST.diff -o pullreq.diff
 else
   git show > pullreq.diff.tmp
   merge=`grep "^Merge: " pullreq.diff.tmp | awk -F: '{print $2}'`
