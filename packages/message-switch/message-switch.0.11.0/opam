@@ -20,6 +20,7 @@ depends: [
   "rpc"
   "mtime"
   "mirage-block-unix"
+  "mirage-clock-unix"
   "shared-block-ring"
   "cmdliner"
   "ssl"
