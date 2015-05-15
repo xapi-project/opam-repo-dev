@@ -1,0 +1,31 @@
+opam-version: "1"
+maintainer: "dave.scott@citrix.com"
+build: [
+  ["./configure" "--bindir" "%{bin}%"]
+  [make]
+  [make "install"]
+]
+remove: [
+  ["ocamlfind" "remove" "message_switch"]
+]
+depends: [
+  "ocamlfind"
+  "cohttp" {>= "0.15.0" }
+  "rpc"
+  "sexplib"
+  "ounit"
+  "syslog"
+  "uri"
+  "re"
+  "rpc"
+  "mtime"
+  "mirage-block-unix"
+  "mirage-clock-unix"
+  "shared-block-ring"
+  "cmdliner"
+  "ssl"
+  "oasis"
+  "async"
+  "ocveralls"
+  "bisect"
+]
