@@ -6,13 +6,13 @@ build: [
 ]
 remove: [
   [make "uninstall" "BINDIR=%{bin}%"]
-  ["ocamlfind" "remove" "camldm"]
+  ["ocamlfind" "remove" "devmapper"]
 ]
 depends: [
   "ocamlfind"
   "rpc" {>= "1.5.0"}
   "sexplib"
-  "ctypes"
+  "ctypes" {>= "0.4.0"}
   "ctypes-foreign"
   "oasis"
   "ounit"
