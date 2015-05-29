@@ -5,7 +5,6 @@ tags: [
   "org:xapi-project"
 ]
 build: [
-  [make "release"]
   [make "all"]
   [make "install"]
 ]
@@ -15,20 +14,19 @@ remove: [
 ]
 depends: [
   "cstruct" {>= "0.7.1"}
-  "camldm" {>= "0.9.1"}
   "lwt"
   "ocamlfind"
   "sexplib"
   "uuidm"
   "re"
   "mirage-types"
-  "ipaddr"
   "ounit"
   "kaputt"
+  "bisect"
+  "oasis"
   "io-page" {> "1.2.0"}
   "mirage-block-unix"
   "mirage-clock-unix"
-  "cmdliner"
   "shared-block-ring"
-  "bisect"
+  "cmdliner"
 ]
