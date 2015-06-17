@@ -26,6 +26,6 @@ depends: [
   "ssl"
   "oasis"
   "async"
-  "ocveralls"
+  "ocveralls" {test}
   "bisect"
 ]
