@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/rrddump/archive/v0.2.tar.gz"
-checksum: "4bc6b4b9a6b5bc9f8485d70525fa3e13"
+git: "git://github.com/xapi-project/rrddump"

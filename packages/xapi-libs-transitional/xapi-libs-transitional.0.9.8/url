@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/xen-api-libs-transitional/archive/v0.9.8.tar.gz"
-checksum: "dcaafc384ede5d3b1f407410fa4136c0"
+git: "git://github.com/xapi-project/xen-api-libs-transitional"

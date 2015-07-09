@@ -1,2 +1,1 @@
-archive: "https://github.com/simonjbeaumont/ocaml-pci/archive/v0.1.1.tar.gz"
-checksum: "297e28517a8a5327b3c56b91ff995b6c"
+git: "git://github.com/simonjbeaumont/ocaml-pci"

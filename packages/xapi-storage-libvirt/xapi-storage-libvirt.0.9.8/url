@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/xapi-libvirt-storage/archive/0.9.8.tar.gz"
-checksum: "a8862889a9afb3d86fda2d0f4ff952cc"
+git: "git://github.com/xapi-project/xapi-libvirt-storage"

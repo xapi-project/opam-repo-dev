@@ -1,2 +1,1 @@
-archive: "https://github.com/djs55/message-switch/archive/v0.11.0.tar.gz"
-checksum: "5d4cf73231574048e72db4e54cc91d32"
+git: "git://github.com/djs55/message-switch"

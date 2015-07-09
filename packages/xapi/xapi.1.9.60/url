@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/xen-api/archive/v1.9.60.tar.gz"
-checksum: "d7b710a2f1d04bdb3b282398b98c55ac"
+git: "git://github.com/xapi-project/xen-api"

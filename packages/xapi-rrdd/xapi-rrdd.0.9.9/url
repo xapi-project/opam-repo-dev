@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/xcp-rrdd/archive/v0.9.9.tar.gz"
-checksum: "b104370174466b03f1feca21d8ed1884"
+git: "git://github.com/xapi-project/xcp-rrdd"
