@@ -74,6 +74,7 @@ function build_one {
       if [ "$srcext" != "" ]; then
         curl -sL ${srcext} | bash
       fi  
+    sudo apt-get install -qq `opam install ocamlfind -e ubuntu`
     opam install ocamlfind
     sudo mkdir -p $(ocamlc -where)
     eval `opam config env`

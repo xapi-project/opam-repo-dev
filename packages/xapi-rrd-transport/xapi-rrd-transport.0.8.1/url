@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/rrd-transport/archive/v0.8.1.tar.gz"
-checksum: "10432dbb6917407a26df9dd254f77439"
+git: "git://github.com/xapi-project/rrd-transport"

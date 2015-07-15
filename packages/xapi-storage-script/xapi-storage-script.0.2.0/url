@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/xapi-storage-script/archive/v0.2.0.tar.gz"
-checksum: "fd9259a9cef0b6c94411af185e6b64c0"
+git: "git://github.com/xapi-project/xapi-storage-script"

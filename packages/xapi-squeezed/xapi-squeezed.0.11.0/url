@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/squeezed/archive/0.11.0.tar.gz"
-checksum: "9d1ead73e678fa2f51a70a933b0bf017"
+git: "git://github.com/xapi-project/squeezed"

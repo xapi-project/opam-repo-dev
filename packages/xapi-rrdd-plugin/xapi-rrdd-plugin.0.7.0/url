@@ -1,2 +1,1 @@
-archive: "https://github.com/xapi-project/ocaml-rrdd-plugin/archive/v0.7.0.tar.gz"
-checksum: "3a1bce027c7d46652022b4729d7d7257"
+git: "git://github.com/xapi-project/ocaml-rrdd-plugin"
