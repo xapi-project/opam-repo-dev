@@ -1,0 +1,32 @@
+opam-version: "1"
+maintainer: "dave.scott@citrix.com"
+tags: [
+  "org:mirage"
+  "org:xapi-project"
+]
+build: [
+  [make "all"]
+  [make "install"]
+]
+remove: [
+  ["ocamlfind" "remove" "lvm"]
+  ["ocamlfind" "remove" "lvm_internal"]
+]
+depends: [
+  "cstruct" {>= "0.7.1"}
+  "lwt"
+  "ocamlfind"
+  "sexplib"
+  "uuidm"
+  "re"
+  "mirage-types"
+  "ounit"
+  "kaputt"
+  "bisect"
+  "oasis"
+  "io-page" {> "1.2.0"}
+  "mirage-block-unix"
+  "mirage-clock-unix"
+  "shared-block-ring"
+  "cmdliner"
+]
