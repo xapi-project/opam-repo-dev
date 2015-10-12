@@ -15,6 +15,7 @@ depends: [
   "ocamlfind"
   "ounit"
   "mirage-types"
+  "mirage-types-lwt"
   "mirage-block-unix"
   "mirage-clock-unix"
   "sexplib"
