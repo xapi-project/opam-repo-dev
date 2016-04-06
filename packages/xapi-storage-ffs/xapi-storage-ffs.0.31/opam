@@ -2,7 +2,7 @@ opam-version: "1"
 maintainer: "dave.scott@eu.citrix.com"
 build: [
   [make]
-  [make "install" "BINDIR=%{bin}%"]
+  [make "install" "DESTDIR=%{prefix}%" "BINDIR=%{bin}%"]
 ]
 remove: [make "uninstall" "BINDIR=%{bin}%"]
 depends: [
