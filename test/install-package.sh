@@ -9,6 +9,7 @@ if [ -z $PKG ]; then
 fi
 
 export OPAMYES=1
+export DEBIAN_FRONTEND=noninteractive
 
 echo "Testing package ${PKG}:"
 opam info ${PKG}
