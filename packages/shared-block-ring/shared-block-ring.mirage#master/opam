@@ -18,7 +18,7 @@ depends: [
   "mirage-types-lwt"
   "mirage-block-unix"
   "mirage-clock-unix"
-  "sexplib"
+  "sexplib" {<= "113.00.00"}
   "io-page"
   "io-page-unix"
   "cmdliner"
