@@ -22,7 +22,7 @@ depends: [
   "bisect"
   "cohttp"
   "rpc"
-  "sexplib"
+  "sexplib" {< "113.24.00"}
   "camldm"
   "ounit"
   "oasis"

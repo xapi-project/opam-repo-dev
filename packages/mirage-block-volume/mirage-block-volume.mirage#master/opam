@@ -16,7 +16,7 @@ depends: [
   "cstruct" {>= "0.7.1"}
   "lwt"
   "ocamlfind"
-  "sexplib"
+  "sexplib" {< "113.24.00"}
   "uuidm"
   "re"
   "mirage-types"

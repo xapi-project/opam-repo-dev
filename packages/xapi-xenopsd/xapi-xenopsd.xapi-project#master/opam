@@ -21,7 +21,7 @@ depends: [
   "xapi-forkexecd"
   "xapi-stdext"
   "fd-send-recv"
-  "sexplib"
+  "sexplib" {< "113.24.00"}
   "xenstore"
   "xenstore_transport"
   "xenctrl" {>= "0.9.25"}

@@ -12,7 +12,7 @@ depends: [
   "ocamlfind"
   "cohttp" {>= "0.15.0" }
   "rpc"
-  "sexplib"
+  "sexplib" {< "113.24.00"}
   "ounit"
   "syslog"
   "uri"
