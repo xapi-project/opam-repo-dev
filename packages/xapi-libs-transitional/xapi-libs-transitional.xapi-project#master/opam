@@ -24,7 +24,7 @@ depends: [
   "ocamlfind"
   "xapi-stdext" {= "xapi-project#master"}
   "xmlm"
-  "xapi-forkexecd"
+  "xapi-forkexecd" {= "xapi-project#master"}
   "rpc"
   "xenctrl" {= "xapi-project#master"}
   "xenstore"

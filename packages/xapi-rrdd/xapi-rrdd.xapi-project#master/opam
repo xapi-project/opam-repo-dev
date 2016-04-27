@@ -13,7 +13,7 @@ depends: [
   "xapi-libs-transitional" {= "xapi-project#master"}
   "xapi-inventory" {= "xapi-project#master"}
   "xapi-stdext" {= "xapi-project#master"}
-  "xapi-forkexecd"
+  "xapi-forkexecd" {= "xapi-project#master"}
   "xenctrl" {= "xapi-project#master"}
   "xenstore_transport"
   "xapi-xenops"

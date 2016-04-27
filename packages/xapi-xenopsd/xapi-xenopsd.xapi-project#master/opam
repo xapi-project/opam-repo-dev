@@ -18,7 +18,7 @@ depends: [
   "re"
   "rpc"
   "xapi-idl" {= "xapi-project#master"}
-  "xapi-forkexecd"
+  "xapi-forkexecd" {= "xapi-project#master"}
   "xapi-stdext" {= "xapi-project#master"}
   "fd-send-recv"
   "sexplib" {< "113.24.00"}

@@ -15,7 +15,7 @@ depends: [
   "omake" {build}
   "cdrom"
   "fd-send-recv"
-  "xapi-forkexecd"
+  "xapi-forkexecd" {= "xapi-project#master"}
   "libvhd"
   "nbd" {>= "1.0.2"}
   "oclock"
