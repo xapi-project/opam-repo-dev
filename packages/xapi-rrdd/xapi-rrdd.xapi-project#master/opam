@@ -14,7 +14,7 @@ depends: [
   "xapi-inventory" {= "xapi-project#master"}
   "xapi-stdext" {>= "0.13.0"}
   "xapi-forkexecd"
-  "xenctrl" {>= "0.9.28"}
+  "xenctrl" {= "xapi-project#master"}
   "xenstore_transport"
   "xapi-xenops"
   "io-page"
