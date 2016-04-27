@@ -10,9 +10,9 @@ depends: [
   "ocamlfind"
   "xapi-backtrace" {>= "0.3"}
   "xapi-idl" {= "xapi-project#master"}
-  "xapi-libs-transitional" {>= "0.9.7"}
+  "xapi-libs-transitional" {= "xapi-project#master"}
   "xapi-inventory" {= "xapi-project#master"}
-  "xapi-stdext" {>= "0.13.0"}
+  "xapi-stdext" {= "xapi-project#master"}
   "xapi-forkexecd"
   "xenctrl" {= "xapi-project#master"}
   "xenstore_transport"
