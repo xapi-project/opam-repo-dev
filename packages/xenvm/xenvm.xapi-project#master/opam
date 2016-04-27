@@ -17,15 +17,14 @@ depends: [
   "cstruct" {>= "0.7.1"}
   "lwt"
   "flock"
-  "shared-block-ring"
-  "mirage-block-volume" {>= "0.9.2"}
+  "shared-block-ring" {= "mirage#master"}
+  "mirage-block-volume" {= "mirage#master"}
   "mirage-clock-unix"
-  "camldm"
+  "camldm" {>= "0.11.1"}
   "cmdliner"
   "cohttp"
   "rpc"
   "sexplib" {< "113.24.00"}
-  "camldm"
   "stringext"
-  "xapi-rrdd-plugin"
+  "xapi-rrdd-plugin" {= "xapi-project#master"}
 ]

@@ -8,28 +8,28 @@ build: [
 remove: ["rm" "%{bin}%/xapi"]
 depends: [
   "ocamlfind"
-  "xapi-idl"
-  "xapi-libs-transitional"
-  "xen-api-client"
+  "xapi-idl" {= "xapi-project#master"}
+  "xapi-libs-transitional" {= "xapi-project#master"}
+  "xen-api-client" {= "xapi-project#master"}
   "xapi-netdev"
-  "omake"
+  "omake" {build}
   "cdrom"
   "fd-send-recv"
   "xapi-forkexecd"
   "libvhd"
-  "nbd"
+  "nbd" {>= "1.0.2"}
   "oclock"
   "ounit"
   "rpc"
   "ssl"
-  "xapi-stdext"
-  "xapi-tapctl"
-  "xenctrl"
+  "xapi-stdext" {= "xapi-project#master"}
+  "xapi-tapctl" {= "xapi-project#master"}
+  "xenctrl" {= "xapi-project#master"}
   "xenstore"
-  "xapi-inventory"
+  "xapi-inventory" {= "xapi-project#master"}
   "tar-format"
   "opasswd" {>= "0.9.3"}
-  "xapi-rrdd-plugin"
+  "xapi-rrdd-plugin" {= "xapi-project#master"}
 ]
 depexts: [
   [["centos"] ["pam-devel"]]

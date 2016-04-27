@@ -13,5 +13,5 @@ depends: [
   "uuidm"
   "fd-send-recv"
   "sexplib" {< "113.24.00"}
-  "xapi-backtrace"
+  "xapi-backtrace" {>= "0.3"}
 ] 

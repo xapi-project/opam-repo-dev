@@ -8,10 +8,10 @@ remove: [make "uninstall" "BINDIR=%{bin}%" "SBINDIR=%{bin}%" "LIBEXECDIR=%{bin}%
 depends: [
   "obuild" {>= "0.1.1"}
   "ocamlfind"
-  "xapi-backtrace"
-  "xapi-idl" {>= "0.9.21"}
+  "xapi-backtrace" {>= "0.3"}
+  "xapi-idl" {= "xapi-project#master"}
   "xapi-libs-transitional" {>= "0.9.7"}
-  "xapi-inventory"
+  "xapi-inventory" {= "xapi-project#master"}
   "xapi-stdext" {>= "0.13.0"}
   "xapi-forkexecd"
   "xenctrl" {>= "0.9.28"}
@@ -19,7 +19,7 @@ depends: [
   "xapi-xenops"
   "io-page"
   "xen-gnt"
-  "xapi-rrd-transport"
+  "xapi-rrd-transport" {= "xapi-project#master"}
   "oclock"
 ]
 ocaml-version: [>= "4.01.0"]
