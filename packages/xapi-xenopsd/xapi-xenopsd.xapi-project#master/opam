@@ -8,6 +8,7 @@ build: [
 remove: [make "uninstall"]
 depends: [
   "oasis" {build}
+  "optcomp"
   "ocamlfind"
   "xmlm"
   "uuidm"
