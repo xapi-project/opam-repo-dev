@@ -1,35 +1,37 @@
 opam-version: "1"
 maintainer: "dave.scott@citrix.com"
 build: [
-  ["./configure" "--disable-warn-error" "--varpatchdir" "%{prefix}%/var/patch" "--optdir" "%{lib}%/xcp" "--plugindir" "%{lib}%/xcp/plugins" "--hooksdir" "%{prefix}%/etc/hook-scripts" "--xapiconf" "%{prefix}%/etc/xapi.conf" "--libexecdir" "%{lib}%/xcp/bin" "--scriptsdir" "%{lib}%/xcp/scripts" "--sharedir" "%{share}%/xcp" "--webdir" "%{share}%/xcp/web" "--xhadir" "%{bin}%/xha" "--bindir" "%{bin}%" "--sbindir" "%{bin}%" "--etcdir" "%{prefix}%/etc"]
-  [make "DISABLE_TESTS=true"]
+  ["./configure" "--disable-warn-error" "--varpatchdir" "%{prefix}%/var/patch" "--optdir" "%{lib}%/xcp" "--plugindir" "%{lib}%/xcp/plugins" "--hooksdir" "%{prefix}%/etc/hook-scripts" "--xapiconf" "%{prefix}%/etc/xapi.conf" "--libexecdir" "%{lib}%/xcp/bin" "--scriptsdir" "%{lib}%/xcp/scripts" "--sharedir" "%{share}%/xcp" "--webdir" "%{share}%/xcp/web" "--cluster-stack-root" "%{lib}%/xcp/bin/cluster-stack" "--bindir" "%{bin}%" "--sbindir" "%{bin}%" "--etcdir" "%{prefix}%/etc"]
+  [make]
   ["install" "-m" "0755" "ocaml/xapi/xapi.opt" "%{bin}%/xapi"]
 ]
+build-test: [make "test" ]
 remove: ["rm" "%{bin}%/xapi"]
 depends: [
   "ocamlfind"
-  "xapi-idl"
-  "xapi-libs-transitional"
-  "xen-api-client"
+  "xapi-idl" {= "xapi-project#master"}
+  "xapi-libs-transitional" {= "xapi-project#master"}
+  "xen-api-client" {= "xapi-project#master"}
   "xapi-netdev"
-  "omake"
+  "omake" {build}
   "cdrom"
   "fd-send-recv"
-  "xapi-forkexecd"
+  "xapi-forkexecd" {= "xapi-project#master"}
   "libvhd"
-  "nbd"
+  "nbd" {>= "1.0.2"}
   "oclock"
   "ounit"
   "rpc"
   "ssl"
-  "xapi-stdext"
-  "xapi-tapctl"
-  "xenctrl"
+  "xapi-stdext" {= "xapi-project#master"}
+  "xapi-tapctl" {= "xapi-project#master"}
+  "xenctrl" {= "xapi-project#master"}
   "xenstore"
-  "xapi-inventory"
+  "xapi-inventory" {= "xapi-project#master"}
   "tar-format"
   "opasswd" {>= "0.9.3"}
-  "xapi-rrdd-plugin"
+  "xapi-rrdd-plugin" {= "xapi-project#master"}
+  "pci" {>= "0.2.0"}
 ]
 depexts: [
   [["centos"] ["pam-devel"]]

@@ -16,7 +16,7 @@ depends: [
   "cstruct" {>= "0.7.1"}
   "lwt"
   "ocamlfind"
-  "sexplib"
+  "sexplib" {< "113.24.00"}
   "uuidm"
   "re"
   "mirage-types"
@@ -27,6 +27,6 @@ depends: [
   "io-page" {> "1.2.0"}
   "mirage-block-unix"
   "mirage-clock-unix"
-  "shared-block-ring"
+  "shared-block-ring" {= "mirage#master"}
   "cmdliner"
 ]

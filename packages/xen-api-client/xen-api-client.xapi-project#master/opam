@@ -10,18 +10,18 @@ build: [
 ]
 remove: [["ocamlfind" "remove" "xen-api-client"]]
 depends: [
-  "ocamlfind"
-  "oasis"
+  "ocamlfind" {build}
+  "oasis" {build}
   "lwt" {>= "2.4.3"}
   "cstruct" {>= "1.0.1"}
   "ssl"
-  "ounit"
+  "ounit" {test}
   "cohttp" {>= "0.12.0"}
   "uri"
   "re"
   "xmlm"
   "rpc" {>= "1.3.0"}
-  "xapi-rrd" {>= "0.10.1"}
+  "xapi-rrd" {= "xapi-project#master"}
 ]
 depopts: ["async"]
 conflicts: ["async" {< "111.13.00"}]

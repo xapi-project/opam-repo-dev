@@ -7,9 +7,9 @@ build: [
 remove: [make "PREFIX=%{prefix}%" "uninstall"]
 depends: [
   "rpc"
-  "xapi-forkexecd"
-  "xapi-stdext" {>= "0.13.0"}
-  "xapi-idl" {>= "0.9.21"}
-  "xapi-libs-transitional" {>= "0.9.7"}
-  "xapi-rrd-transport"
+  "xapi-forkexecd" {= "xapi-project#master"}
+  "xapi-stdext" {= "xapi-project#master"}
+  "xapi-idl" {= "xapi-project#master"}
+  "xapi-libs-transitional" {= "xapi-project#master"}
+  "xapi-rrd-transport" {= "xapi-project#master"}
 ]

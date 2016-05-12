@@ -6,7 +6,7 @@ build: [
 ]
 remove: ["make" "PREFIX=%{prefix}%" "uninstall"]
 depends: [
-  "xapi-rrd"
-  "xapi-stdext"
+  "xapi-rrd" {= "xapi-project#master"}
+  "xapi-stdext" {= "xapi-project#master"}
   "xmlm"
 ]

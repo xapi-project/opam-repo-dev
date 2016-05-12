@@ -7,4 +7,9 @@ build: [
 remove: [
   ["make" "BINDIR=%{bin}%" "uninstall"]
 ]
-depends: ["obuild" "xapi-stdext" "rpc" "xapi-libs-transitional" ]
+depends: [
+  "obuild"
+  "rpc"
+  "xapi-libs-transitional" {= "xapi-project#master"}
+  "xapi-stdext" {= "xapi-project#master"}
+]

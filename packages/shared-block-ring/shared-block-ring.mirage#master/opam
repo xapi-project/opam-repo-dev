@@ -12,7 +12,7 @@ remove: [["ocamlfind" "remove" "shared-block-ring"]]
 depends: [
   "cstruct" {>= "0.7.1"}
   "lwt"
-  "ocamlfind"
+  "ocamlfind" {build}
   "ounit"
   "mirage-types"
   "mirage-types-lwt"
@@ -23,5 +23,5 @@ depends: [
   "io-page-unix"
   "cmdliner"
   "bisect"
-  "oasis"
+  "oasis" {build}
 ]

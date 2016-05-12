@@ -12,6 +12,6 @@ depends: [
   "ocamlfind"
   "uuidm"
   "fd-send-recv"
-  "sexplib"
-  "xapi-backtrace"
+  "sexplib" {< "113.24.00"}
+  "xapi-backtrace" {>= "0.3"}
 ] 

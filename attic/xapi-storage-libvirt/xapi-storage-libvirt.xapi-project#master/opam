@@ -6,8 +6,8 @@ build: [
 ]
 remove: ["make" "uninstall" "BINDIR=%{bin}%"]
 depends: [
-  "libvirt"
-  "xapi-idl"
+  "libvirt" {= "djs55#typo"}
+  "xapi-idl" {= "xapi-project#master"}
   "re"
   "rpc"
   "cmdliner"

@@ -12,18 +12,18 @@ depends: [
   "ocamlfind"
   "cohttp" {>= "0.15.0" }
   "rpc"
-  "sexplib"
-  "ounit"
+  "sexplib" {< "113.24.00"}
+  "ounit" {test}
   "syslog"
   "uri"
   "re"
   "rpc"
-  "mtime"
+  "mtime" {= "patched-0.8.1+no-js"}
   "mirage-block-unix"
-  "shared-block-ring"
+  "shared-block-ring" {= "mirage#master"}
   "cmdliner"
   "ssl"
-  "oasis"
+  "oasis" {build}
   "async"
   "bisect"
 ]

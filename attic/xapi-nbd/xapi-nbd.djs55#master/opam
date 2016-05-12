@@ -15,14 +15,14 @@ depends: [
   "lwt"
   "cstruct" {> "1.0.0"}
   "cmdliner"
-  "sexplib"
+  "sexplib" {< "113.24.00"}
   "mirage-block-unix"
   "io-page"
   "mirage"
-  "nbd"
-  "xen-api-client"
+  "nbd" {>= "1.0.2"}
+  "xen-api-client" {= "xapi-project#master"}
   "uri" {>= "1.9.0" }
-  "xapi-idl"
-  "message-switch"
+  "xapi-idl" {= "xapi-project#master"}
+  "message-switch" {= "xapi-project#master"}
 ]
 tags: [ "org:mirage" "org:xapi-project" ]

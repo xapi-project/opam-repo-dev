@@ -7,8 +7,9 @@ build: [
 ]
 remove: ["make" "uninstall" "BINDIR=%{bin}%"]
 depends: [
-  "xapi-idl"
+  "xapi-idl" {= "xapi-project#master"}
   "re"
   "rpc"
   "ocamlfind"
+  "obuild"
 ]

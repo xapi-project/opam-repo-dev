@@ -7,4 +7,8 @@ build: [
 remove: [
   ["make" "BINDIR=%{bin}%" "uninstall"]
 ]
-depends: ["obuild" "xen-api-client" "cmdliner"]
+depends: [
+  "obuild" {build}
+  "xen-api-client" {= "xapi-project#master"}
+  "cmdliner"
+]
