@@ -11,4 +11,5 @@ depends: [
   "re"
   "rpc"
   "ocamlfind"
+  "obuild"
 ]
