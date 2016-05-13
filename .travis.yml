@@ -1,3 +1,41 @@
 language: c
 services: docker
-script: bash -e test/travis-ci.sh
+install: docker build -t opam-repo-dev .
+script:
+  - bash test/install-in-container.sh
+env:
+  - PKG=camldm.0.11.1
+  - PKG=eliloader.xapi-project#master
+  - PKG=libvirt.djs55#typo
+  - PKG=localstorage-js.djs55#opam
+  - PKG=logminer.jeromemaloberti#master
+  - PKG=message-switch.xapi-project#master
+  - PKG=mirage-block-volume.mirage#master
+  - PKG=mtime.patched-0.8.1+no-js
+  - PKG=nbd.1.0.2
+  - PKG=rrddump.xapi-project#master
+  - PKG=shared-block-ring.mirage#master
+  - PKG=vncproxy.xapi-project#master
+  - PKG=vxs.xapi-project#master
+  - PKG=xapi-backtrace.0.3
+  - PKG=xapi-forkexecd.xapi-project#master
+  - PKG=xapi-idl.xapi-project#master
+  - PKG=xapi-inventory.xapi-project#master
+  - PKG=xapi-libs-transitional.xapi-project#master
+  - PKG=xapi-plugin.xapi-project#master
+  - PKG=xapi-rrdd-plugin.xapi-project#master
+  - PKG=xapi-rrdd.xapi-project#master
+  - PKG=xapi-rrd-transport.xapi-project#master
+  - PKG=xapi-rrd.xapi-project#master
+  - PKG=xapi-squeezed.xapi-project#master
+  - PKG=xapi-stdext.xapi-project#master
+  - PKG=xapi-storage-cli.0.9.7
+  - PKG=xapi-storage-ffs.0.31
+  - PKG=xapi-storage-script.xapi-project#master
+  - PKG=xapi-storage.xapi-project#master
+  - PKG=xapi-tapctl.xapi-project#master
+  - PKG=xapi.xapi-project#master
+  - PKG=xapi-xenopsd.xapi-project#master
+  - PKG=xen-api-client.xapi-project#master
+  - PKG=xenctrl.xapi-project#master
+  - PKG=xenvm.xapi-project#master
