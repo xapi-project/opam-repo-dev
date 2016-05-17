@@ -2,7 +2,7 @@ language: c
 services: docker
 install: docker build -t opam-repo-dev .
 script:
-  - bash test/install-in-container.sh
+  - bash test/install-one-in-container.sh
 env:
   - PKG=camldm.0.11.1
   - PKG=eliloader.xapi-project#master
