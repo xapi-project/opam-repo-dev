@@ -34,6 +34,7 @@ env:
   - PKG=xapi-storage-script.xapi-project#master
   - PKG=xapi-storage.xapi-project#master
   - PKG=xapi-tapctl.xapi-project#master
+  - PKG=xapi-test-utils.xapi-project#master
   - PKG=xapi.xapi-project#master
   - PKG=xapi-xenopsd.xapi-project#master
   - PKG=xen-api-client.xapi-project#master
