@@ -1,5 +1,4 @@
-xapi-project source packages
-============================
+# xapi-project source packages [![Build Status](https://travis-ci.org/xapi-project/opam-repo-dev.svg?branch=master)](https://travis-ci.org/xapi-project/opam-repo-dev)
 
 To build the xapi-project toolstack components from source:
 
