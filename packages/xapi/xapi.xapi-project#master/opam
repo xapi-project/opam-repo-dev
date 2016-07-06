@@ -18,7 +18,7 @@ depends: [
   "fd-send-recv"
   "xapi-forkexecd" {= "xapi-project#master"}
   "libvhd"
-  "nbd" {>= "1.0.2"}
+  "nbd" {= "xapi-project#master"}
   "oclock"
   "ounit"
   "rpc"
