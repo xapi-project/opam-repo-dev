@@ -35,6 +35,7 @@ env:
   - PKG=xapi-tapctl.xapi-project#master
   - PKG=xapi-test-utils.xapi-project#master
   - PKG=xapi.xapi-project#master
+  - PKG=xapi-xenops.xapi-project#master
   - PKG=xapi-xenopsd.xapi-project#master
   - PKG=xen-api-client.xapi-project#master
   - PKG=xenctrl.xapi-project#master
