@@ -38,4 +38,3 @@ env:
   - PKG=xapi-xenopsd.xapi-project#master
   - PKG=xen-api-client.xapi-project#master
   - PKG=xenctrl.xapi-project#master
-  - PKG=xenvm.xapi-project#master
