@@ -3,7 +3,6 @@ services: docker
 install: docker build -t opam-repo-dev .
 script: docker run --rm -it opam-repo-dev bash /opam-repo-dev/test/install-package.sh $PKG
 env:
-  - PKG=camldm.0.11.1
   - PKG=libvirt.djs55#typo
   - PKG=localstorage-js.djs55#opam
   - PKG=logminer.jeromemaloberti#master
