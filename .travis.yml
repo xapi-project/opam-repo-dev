@@ -3,15 +3,13 @@ services: docker
 install: docker build -t opam-repo-dev .
 script: docker run --rm -it opam-repo-dev bash /opam-repo-dev/test/install-package.sh $PKG
 env:
-  - PKG=camldm.0.11.1
-  - PKG=eliloader.xapi-project#master
   - PKG=libvirt.djs55#typo
   - PKG=localstorage-js.djs55#opam
   - PKG=logminer.jeromemaloberti#master
   - PKG=message-switch.xapi-project#master
   - PKG=mirage-block-volume.mirage#master
   - PKG=mtime.patched-0.8.1+no-js
-  - PKG=nbd.1.0.2
+  - PKG=nbd.xapi-project#master
   - PKG=rrddump.xapi-project#master
   - PKG=shared-block-ring.mirage#master
   - PKG=vncproxy.xapi-project#master
@@ -21,6 +19,7 @@ env:
   - PKG=xapi-idl.xapi-project#master
   - PKG=xapi-inventory.xapi-project#master
   - PKG=xapi-libs-transitional.xapi-project#master
+  - PKG=xapi-netdev.xapi-project#master
   - PKG=xapi-plugin.xapi-project#master
   - PKG=xapi-rrdd-plugin.xapi-project#master
   - PKG=xapi-rrdd.xapi-project#master
@@ -35,7 +34,7 @@ env:
   - PKG=xapi-tapctl.xapi-project#master
   - PKG=xapi-test-utils.xapi-project#master
   - PKG=xapi.xapi-project#master
+  - PKG=xapi-xenops.xapi-project#master
   - PKG=xapi-xenopsd.xapi-project#master
   - PKG=xen-api-client.xapi-project#master
   - PKG=xenctrl.xapi-project#master
-  - PKG=xenvm.xapi-project#master
