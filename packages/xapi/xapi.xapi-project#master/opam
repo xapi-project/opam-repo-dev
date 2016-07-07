@@ -12,7 +12,7 @@ depends: [
   "xapi-idl" {= "xapi-project#master"}
   "xapi-libs-transitional" {= "xapi-project#master"}
   "xen-api-client" {= "xapi-project#master"}
-  "xapi-netdev"
+  "xapi-netdev" {= "xapi-project#master"}
   "omake" {build}
   "cdrom"
   "fd-send-recv"

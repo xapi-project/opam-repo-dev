@@ -19,6 +19,7 @@ env:
   - PKG=xapi-idl.xapi-project#master
   - PKG=xapi-inventory.xapi-project#master
   - PKG=xapi-libs-transitional.xapi-project#master
+  - PKG=xapi-netdev.xapi-project#master
   - PKG=xapi-plugin.xapi-project#master
   - PKG=xapi-rrdd-plugin.xapi-project#master
   - PKG=xapi-rrdd.xapi-project#master
