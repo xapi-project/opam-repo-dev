@@ -12,7 +12,7 @@ Second install the [opam](http://opam.ocaml.org/) source package manager.
 Initialise an opam configuration and add this repo: (note this will install the OCaml compiler from source,
 so you don't need to worry about distro package versions)
 ```
-opam init --comp=4.01.0
+opam init --comp=4.02.3
 eval `opam config env`
 opam remote add xapi-project git://github.com/xapi-project/opam-repo-dev
 ```
