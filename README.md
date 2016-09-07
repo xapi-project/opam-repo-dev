@@ -9,7 +9,7 @@ apt-get install build-essential libxen-dev libvirt-dev autoconf m4  blktap-dev l
 
 For some of the dependencies you may also need to install the following:
 ```
-apt-get install libssl-ocaml-dev libffi-dev libpci-dev
+apt-get install libssl-ocaml-dev
 ```
 
 Second install the [opam](http://opam.ocaml.org/) source package manager.
@@ -24,6 +24,7 @@ opam remote add xapi-project git://github.com/xapi-project/opam-repo-dev
 
 To build xapi:
 ```
+opam depext xapi.xapi-project#master
 opam install xapi
 ```
 
