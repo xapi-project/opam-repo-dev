@@ -7,6 +7,11 @@ First install common development tools and headers:
 apt-get install build-essential libxen-dev libvirt-dev autoconf m4  blktap-dev libsystemd-dev
 ```
 
+For some of the dependencies you may also need to install the following:
+```
+apt-get install libssl-ocaml-dev libffi-dev libpci-dev
+```
+
 Second install the [opam](http://opam.ocaml.org/) source package manager.
 
 Initialise an opam configuration and add this repo: (note this will install the OCaml compiler from source,
