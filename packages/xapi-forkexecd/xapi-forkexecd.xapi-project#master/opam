@@ -15,12 +15,12 @@ remove: [make "uninstall" "BINDIR=%{bin}%" "SBINDIR=%{bin}%" "ETCDIR=%{prefix}%/
 depends: [
   "ocamlfind" {build}
   "oasis" {build}
-  "systemd" {build}
+  "systemd" {= "xapi-project#master"}
   "syslog"
   "rpc"
   "fd-send-recv"
   "uuidm"
   "xapi-stdext" {>= "2.0.0"}
   "re"
-  "xapi-idl"
+  "xapi-idl" {= "xapi-project#master"}
 ]
