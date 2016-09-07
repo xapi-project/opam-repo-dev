@@ -4,7 +4,7 @@ To build the xapi-project toolstack components from source:
 
 First install common development tools and headers:
 ```
-apt-get install build-essential libxen-dev libvirt-dev autoconf m4
+apt-get install build-essential libxen-dev libvirt-dev autoconf m4  blktap-dev libsystemd-dev
 ```
 
 Second install the [opam](http://opam.ocaml.org/) source package manager.
