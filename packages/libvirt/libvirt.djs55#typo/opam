@@ -15,7 +15,7 @@ depends: [
 ]
 depexts: [
   [["debian"] ["libvirt-dev" "autoconf"]]
-  [["ubuntu"] ["libvirt-dev" "autoconf"]]
+  [["ubuntu"] ["libvirt-dev" "autoconf" "blktap-dev"]]
   [["centos"] ["libvirt-devel" "autoconf"]]
 ]
 
