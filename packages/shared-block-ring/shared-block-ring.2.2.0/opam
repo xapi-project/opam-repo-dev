@@ -19,6 +19,8 @@ depends: [
   "mirage-block-unix"
   "mirage-clock-unix"
   "sexplib" {<= "113.00.00"}
+  "camlp4"
+  "type_conv"
   "io-page"
   "io-page-unix"
   "cmdliner"
