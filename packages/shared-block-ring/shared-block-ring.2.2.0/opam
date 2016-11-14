@@ -11,7 +11,7 @@ build: [
 remove: [["ocamlfind" "remove" "shared-block-ring"]]
 depends: [
   "cstruct" {>= "0.7.1"}
-  "lwt"
+  "lwt" {<= "2.5.2"}
   "ocamlfind" {build}
   "ounit"
   "mirage-types"
