@@ -11,7 +11,7 @@ env:
   - PKG=mtime.patched-0.8.1+no-js
   - PKG=nbd.xapi-project#master
   - PKG=rrddump.xapi-project#master
-  - PKG=shared-block-ring.mirage#master
+  - PKG=shared-block-ring.2.2.0
   - PKG=vncproxy.xapi-project#master
   - PKG=vxs.xapi-project#master
   - PKG=xapi-backtrace.0.3

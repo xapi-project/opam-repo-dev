@@ -17,7 +17,7 @@ depends: [
   "cstruct" {>= "0.7.1"}
   "lwt"
   "flock"
-  "shared-block-ring" {= "mirage#master"}
+  "shared-block-ring" {= "2.2.0"}
   "mirage-block-volume" {= "mirage#master"}
   "mirage-clock-unix"
   "camldm" {>= "0.11.1"}

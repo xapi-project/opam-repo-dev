@@ -1,4 +1,4 @@
-FROM ocaml/opam
+FROM ocaml/opam:debian-stable_ocaml-4.02.3
 
 RUN sudo apt-get update -yy
 
