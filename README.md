@@ -43,7 +43,7 @@ git clone git://github.com/xapi-project/stdext
 Next tell opam to use the custom version:
 ```
 opam remove stdext
-opam pin stdext stdext
+opam pin add stdext stdext
 ```
 Next install the component you want to test:
 ```
