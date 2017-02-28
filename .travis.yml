@@ -9,7 +9,7 @@ env:
   - PKG=message-switch.xapi-project#master
   - PKG=mirage-block-volume.mirage#master
   - PKG=mtime.patched-0.8.1+no-js
-  - PKG=nbd.xapi-project#master
+  - PKG=nbd.xapi-project#trunk-ring3
   - PKG=rrddump.xapi-project#master
   - PKG=shared-block-ring.2.2.0
   - PKG=vncproxy.xapi-project#master
