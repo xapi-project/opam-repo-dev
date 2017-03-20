@@ -1,5 +1,12 @@
 # xapi-project source packages [![Build Status](https://travis-ci.org/xapi-project/opam-repo-dev.svg?branch=master)](https://travis-ci.org/xapi-project/opam-repo-dev)
 
+---
+
+**This project is superseded by [xs-opam] and no longer actively
+maintained as of 20. March 2017.**
+
+---
+
 To build the xapi-project toolstack components from source:
 
 First install common development tools and headers:
@@ -63,3 +70,5 @@ via a distro's native package manager. These binary packages are intended for us
 
 Source packages built from this repo are intended for developers: quickly making changes, recompiling and
 testing.
+
+[xs-opam]:  https://github.com/xapi-project/xs-opam/
